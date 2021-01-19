@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeBody } from "./HomeBody";
+import { Body } from "../Body";
 import { Footer } from "../Footer";
 import { Navbar } from "../navbar/Navbar";
 
@@ -20,7 +20,7 @@ export const Home = (props: Props) => {
 			{/* Navbar */}
 			<Navbar />
 			{/* Body */}
-			<HomeBody />
+			<Body page={"home"} />
 			{/* Footer */}
 			<Footer />
 		</div>
