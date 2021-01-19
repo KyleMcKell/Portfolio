@@ -10,14 +10,18 @@ const navStyle: React.CSSProperties = {
 	margin: 0,
 	position: "absolute",
 	width: "100%",
+	height: "6rem",
+	top: 0,
+	right: 0,
 };
 
 const containerStyle: React.CSSProperties = {
-	margin: "1rem 4rem",
+	margin: "0 4rem",
 	display: "flex",
 	flexDirection: "row",
 	justifyContent: "space-between",
 	alignItems: "center",
+	height: "100%",
 };
 
 export const Navbar = (props: Props) => {
