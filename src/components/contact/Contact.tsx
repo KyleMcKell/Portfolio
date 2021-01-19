@@ -1,9 +1,9 @@
 import React from "react";
-import { Navbar } from "./navbar/Navbar";
+import { Navbar } from "../navbar/Navbar";
 
 interface Props {}
 
-export const Portfolio = (props: Props) => {
+export const Contact = (props: Props) => {
 	return (
 		<>
 			<Navbar />
