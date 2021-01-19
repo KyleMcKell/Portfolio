@@ -1,4 +1,6 @@
 import React from "react";
+import { Logo } from "./Logo";
+import { NavList } from "./NavList";
 
 interface Props {}
 
@@ -11,14 +13,8 @@ const navStyle: React.CSSProperties = {
 export const Navbar = (props: Props) => {
 	return (
 		<nav style={navStyle}>
-			<div className="logo">Kyle McKell</div>
-			<div className="routes">
-				<ul>
-					<li>About</li>
-					<li>Portfolio</li>
-					<li>Contact</li>
-				</ul>
-			</div>
+			<Logo />
+			<NavList />
 		</nav>
 	);
 };
