@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Contact } from "./components/Contact";
 import { Portfolio } from "./components/Portfolio";
+import "./styles/Nord.css";
+import "./styles/App.css";
 
 const App: React.FC = () => {
 	return (
