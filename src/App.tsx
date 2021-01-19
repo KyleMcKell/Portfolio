@@ -11,8 +11,10 @@ const App: React.FC = () => {
 		<BrowserRouter>
 			<Switch>
 				<Route path="/" exact component={Home} />
+				<Route path="/about" exact component={Home} />
 				<Route path="/contact" exact component={Contact} />
 				<Route path="/portfolio" exact component={Portfolio} />
+				<Route path="/" render={() => <div>404 Page Not Found</div>} />
 			</Switch>
 		</BrowserRouter>
 	);
