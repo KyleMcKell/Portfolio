@@ -5,14 +5,7 @@ import { Navbar } from "../navbar/Navbar";
 
 interface Props {}
 
-const homeStyle: React.CSSProperties = {
-	padding: 0,
-	margin: 0,
-	position: "relative",
-	height: "100vh",
-	display: "flex",
-	flexDirection: "column",
-};
+const homeStyle: React.CSSProperties = {};
 
 export const Home = (props: Props) => {
 	return (

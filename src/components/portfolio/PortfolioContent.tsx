@@ -2,10 +2,10 @@ import React from "react";
 
 interface Props {}
 
-export const HomeContent = (props: Props) => {
+export const PortfolioContent = (props: Props) => {
 	return (
 		<div>
-			<h1>home</h1>
+			<h1>portfolio</h1>
 		</div>
 	);
 };
