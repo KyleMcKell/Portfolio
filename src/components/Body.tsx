@@ -9,11 +9,9 @@ interface Props {
 
 const bodyStyle: React.CSSProperties = {
 	backgroundColor: "var(--nord4)",
-	marginTop: "6rem",
 	height: "100vh",
 	width: "100%",
 	textAlign: "center",
-	position: "relative",
 	display: "flex",
 	flexDirection: "column",
 };

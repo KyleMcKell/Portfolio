@@ -10,6 +10,7 @@ const navListItemStyle: React.CSSProperties = {
 	fontSize: "1.2rem",
 	color: "var(--nord6)",
 	textDecoration: "none",
+	fontWeight: "bold",
 };
 
 export const NavListElement = (props: Props) => {
