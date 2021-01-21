@@ -17,8 +17,9 @@ const NavListElement = styled.li`
 	}
 
 	:first-child img {
-		min-width: 2.2rem;
-		max-width: 2.2rem;
+		margin: 0 1.25rem;
+		min-width: 2.5rem;
+		max-width: 2.5rem;
 	}
 
 	:hover {
