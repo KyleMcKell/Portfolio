@@ -11,7 +11,11 @@ const NavBar = styled.nav`
 	transition: width 300ms ease;
 
 	:hover {
-		width: 10rem;
+		width: 16rem;
+	}
+
+	:hover span {
+		display: inline;
 	}
 `;
 
@@ -30,9 +34,9 @@ export const Navbar = (props: Props) => {
 	return (
 		<NavBar>
 			<NavBarNav>
-				<NavElement>About</NavElement>
-				<NavElement>About</NavElement>
-				<NavElement>About</NavElement>
+				<NavElement />
+				<NavElement />
+				<NavElement />
 			</NavBarNav>
 		</NavBar>
 	);
