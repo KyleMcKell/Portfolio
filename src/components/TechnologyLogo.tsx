@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const TechnologyLogo = styled.img`
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 `;
 
 export default TechnologyLogo;

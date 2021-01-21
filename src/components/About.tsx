@@ -49,16 +49,18 @@ const AboutContainer = styled.div`
 	width: 100%;
 	height: 30vh;
 	align-items: center;
-	justify-content: flex-start;
-	background-color: var(--nord4);
+	justify-content: space-evenly;
+	background-color: var(--nord6);
 	margin: 0;
 	padding: 0;
+	border-bottom: 6px var(--nord9) solid;
+	border-top: 6px var(--nord9) solid;
 `;
 
 const TechText = styled.h2`
 	color: var(--nord2);
 	text-align: center;
-	margin: 2rem 3rem;
+	margin: 0rem 3rem;
 	font-size: 1.25rem;
 `;
 
@@ -66,9 +68,8 @@ export const About = (props: Props) => {
 	return (
 		<AboutContainer>
 			<TechText>
-				My name is Kyle McKell. I am a software developer specializing in
-				front-end web applications with JavaScript and TypeScript. These are the
-				languages, frameworks, and libraries I am familiar with:
+				My name is Kyle McKell. I'm a Front-End Developer specializing in React
+				applications with TypeScript.
 			</TechText>
 			<LogoContainer>
 				{logos.map((logo) => {
