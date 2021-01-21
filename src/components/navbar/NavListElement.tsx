@@ -4,6 +4,7 @@ const NavListElement = styled.li`
 	width: 100%;
 	font-weight: bold;
 	font-size: 1.2rem;
+	transition: background-color 300ms linear;
 
 	:first-child {
 		text-transform: uppercase;

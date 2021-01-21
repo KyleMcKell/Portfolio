@@ -7,7 +7,7 @@ const NavLink = styled.a`
 	color: var(--nord6);
 	text-decoration: none;
 	height: 5rem;
-	transition: background-color 300ms linear;
+	transition: color 300ms linear;
 
 	:hover {
 		color: var(--nord1);
