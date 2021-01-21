@@ -10,25 +10,19 @@ const NavListElement = styled.li`
 		font-size: 2rem;
 		overflow: hidden;
 		white-space: nowrap;
-		margin-bottom: 1rem;
 		text-align: center;
 		letter-spacing: 0.02ch;
 		width: 100%;
+		border-bottom: 6px var(--nord3) solid;
 	}
 
 	:first-child img {
-		min-width: 3rem;
-		max-width: 3rem;
-		margin: 0 1rem;
-	}
-
-	:last-child {
-		margin-top: auto;
+		min-width: 2.2rem;
+		max-width: 2.2rem;
 	}
 
 	:hover {
 		background-color: var(--nord4);
-		color: var(--nord1);
 	}
 `;
 
