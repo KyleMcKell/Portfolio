@@ -1,21 +1,24 @@
 import React from "react";
+import styled from "styled-components";
+import { About } from "./About";
 
 interface Props {}
 
-const mainStyle: React.CSSProperties = {
-	marginLeft: "5rem",
-	background: "var(--nord6)",
-	padding: "1rem",
-	height: "100%",
-};
+const StyledMain = styled.main`
+	margin-left: 5rem;
+	background: var(--nord3);
+	height: 100vh;
+	color: var(--nord6);
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
 
 export const Body = (props: Props) => {
 	return (
-		<main style={mainStyle}>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel expedita
-			minus enim omnis iste fugiat similique aspernatur necessitatibus facere
-			harum nesciunt quibusdam, sed deleniti quasi voluptas et hic inventore
-			perspiciatis?
-		</main>
+		<StyledMain>
+			<About />
+		</StyledMain>
 	);
 };

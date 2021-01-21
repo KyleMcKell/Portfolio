@@ -5,7 +5,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 :root {
-	font-family: "Source Code Pro", monospace, Arial, sans-serif;
+	font-family: "Fira Code", monospace, Arial, sans-serif;
 	font-size: 16px;
 	--nord0: #2e3440;
 	--nord1: #3b4252;

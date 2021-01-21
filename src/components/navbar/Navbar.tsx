@@ -5,10 +5,10 @@ import NavBarNav from "components/navbar/NavbarNav";
 import NavLink from "components/navbar/NavLink";
 import NavListImg from "components/navbar/NavListImg";
 import NavLinkText from "components/navbar/NavLinkText";
-import crow from "images/crow.svg";
-import feather from "images/feather.svg";
-import code from "images/code.svg";
-import mountain from "images/mountain.svg";
+import crow from "images/crow.png";
+import feather from "images/feather.png";
+import code from "images/code.png";
+import mountain from "images/mountain.png";
 
 interface Props {}
 
