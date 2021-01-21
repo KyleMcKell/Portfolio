@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavElement } from "components/NavElement";
+import { NavElement } from "components/navbar/NavElement";
 
 interface Props {}
 
