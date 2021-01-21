@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/static/js/main.ea5088f5.chunk.js",
-    "main.js.map": "/static/js/main.ea5088f5.chunk.js.map",
+    "main.js": "/static/js/main.706d5f58.chunk.js",
+    "main.js.map": "/static/js/main.706d5f58.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
     "static/js/2.75fb1101.chunk.js": "/static/js/2.75fb1101.chunk.js",
     "static/js/2.75fb1101.chunk.js.map": "/static/js/2.75fb1101.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.75fb1101.chunk.js.LICENSE.txt": "/static/js/2.75fb1101.chunk.js.LICENSE.txt",
-    "static/media/code.8fcac078.svg": "/static/media/code.8fcac078.svg",
-    "static/media/crow.072a34df.svg": "/static/media/crow.072a34df.svg",
-    "static/media/feather.f85c3556.svg": "/static/media/feather.f85c3556.svg",
-    "static/media/mountain.c59e9bb8.svg": "/static/media/mountain.c59e9bb8.svg"
+    "static/media/code.3d811acd.svg": "/static/media/code.3d811acd.svg",
+    "static/media/crow.efdce024.svg": "/static/media/crow.efdce024.svg",
+    "static/media/feather.8811af9f.svg": "/static/media/feather.8811af9f.svg",
+    "static/media/mountain.eef92ad8.svg": "/static/media/mountain.eef92ad8.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/js/2.75fb1101.chunk.js",
-    "static/js/main.ea5088f5.chunk.js"
+    "static/js/main.706d5f58.chunk.js"
   ]
 }
