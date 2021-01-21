@@ -8,7 +8,7 @@ import NavLinkText from "components/navbar/NavLinkText";
 import crow from "images/crow.svg";
 import feather from "images/feather.svg";
 import code from "images/code.svg";
-import user from "images/user.svg";
+import peace from "images/peace.svg";
 
 interface Props {}
 
@@ -40,7 +40,7 @@ const navbarElements: navbarElement[] = [
 		src: "about",
 	},
 	{
-		img: user,
+		img: peace,
 		text: "About",
 		src: "about",
 	},

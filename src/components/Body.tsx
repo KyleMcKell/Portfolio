@@ -4,7 +4,7 @@ interface Props {}
 
 const mainStyle: React.CSSProperties = {
 	marginLeft: "5rem",
-	background: "var(--nord6",
+	background: "var(--nord6)",
 	padding: "1rem",
 	height: "100%",
 };
