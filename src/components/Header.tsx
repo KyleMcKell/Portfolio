@@ -6,7 +6,6 @@ interface Props {}
 const StyledHeader = styled.header`
 	height: 200px;
 	width: auto;
-	background-color: var(--nord1);
 	margin-left: calc(5rem + 6px);
 	display: flex;
 	flex-direction: column;
@@ -24,41 +23,48 @@ const H1Name = styled.h1`
 	font-weight: bold;
 	color: var(--nord4);
 	margin-bottom: 5px;
-`;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	trasnform: translateY(-50%);
+	border-right: 6px solid var(--nord3);
+	animation: typewriter 2s steps(12) 2s 1 normal both,
+		blinkTextCursor 1.25s steps(2, start) infinite;
 
-const Blinker = styled(H1Name)`
-	color: var(--nord8);
-	animation: blink-animation 1.25s steps(2, start) infinite;
-	@keyframes blink-animation {
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
 		to {
-			visibility: hidden;
+			width: 460px;
+		}
+	}
+
+	@keyframes blinkTextCursor {
+		from {
+			border-right-color: var(--nord4);
+		}
+		to {
+			border-right-color: transparent;
 		}
 	}
 `;
 
 const Separator = styled.div`
-	background-color: var(--nord11);
-	height: 1rem;
+	background-color: var(--nord9);
+	height: 0.5rem;
 	width: 30rem;
 	margin-top: 0;
 	margin-bottom: 1rem;
-`;
-
-const SubText = styled.h3`
-	margin-top: 0;
-	color: var(--nord4);
 `;
 
 export const Header = (props: Props) => {
 	return (
 		<StyledHeader>
 			<NameContainer>
-				<H1Name>Kyle McKell</H1Name>
-				<h3>&nbsp;</h3>
-				<Blinker>|</Blinker>
+				<H1Name>Kyle McKell&nbsp;</H1Name>
 			</NameContainer>
 			<Separator />
-			<SubText>Nord Theme User</SubText>
 		</StyledHeader>
 	);
 };

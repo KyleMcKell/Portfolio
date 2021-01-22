@@ -46,31 +46,37 @@ const logos: logo[] = [
 const AboutContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 60%;
 	height: 30vh;
 	align-items: center;
 	justify-content: space-evenly;
-	background-color: var(--nord4);
+	background: var(--nord1);
 	margin: 0;
-	padding: 0;
-	border-bottom: 6px var(--nord13) solid;
-	border-top: 6px var(--nord12) solid;
+	padding: 1rem;
+	border: 10px var(--nord10) solid;
+	border-radius: 20px;
 `;
-
 const TechText = styled.h2`
-	color: var(--nord2);
+	color: var(--nord6);
 	text-align: center;
 	margin: 0rem 3rem;
 	font-size: 1.25rem;
 `;
 
+const Separator = styled.div`
+	background-color: var(--nord5);
+	height: 0.5rem;
+	width: 70%;
+	margin-top: 0;
+	margin-bottom: 1rem;
+`;
+
 export const About = (props: Props) => {
 	return (
 		<AboutContainer>
-			<TechText>
-				Hey there 🤙 I'm a Front-End Developer specializing in React
-				applications with TypeScript
-			</TechText>
+			<TechText>Hey there 🤙</TechText>
+			<TechText> I'm a React Front-End Developer</TechText>
+			<Separator />
 			<LogoContainer>
 				{logos.map((logo) => {
 					return <TechnologyLogo src={logo.src} alt={logo.name} />;

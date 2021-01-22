@@ -16,8 +16,8 @@ const NavBar = styled.nav`
 	width: 5rem;
 	height: 100vh;
 	position: fixed;
-	transition: width 300ms ease-out;
-	border-right: 6px solid var(--nord14);
+	transition: width 200ms ease-out;
+	background: var(--nord0);
 
 	:hover {
 		width: 20rem;

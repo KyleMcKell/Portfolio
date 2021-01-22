@@ -29,6 +29,12 @@ const GlobalStyle = createGlobalStyle`
 body {
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
+	background-image: linear-gradient(
+		to right bottom,
+		var(--nord3),
+		var(--nord0)
+	);
 }
 `;
 

@@ -8,7 +8,6 @@ const NavBarNav = styled.ul`
 	flex-direction: column;
 	align-items: center;
 	height: 100%;
-	background: var(--nord0);
 `;
 
 export default NavBarNav;
