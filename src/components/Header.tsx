@@ -22,13 +22,13 @@ const NameContainer = styled.div`
 const H1Name = styled.h1`
 	font-size: 4rem;
 	font-weight: bold;
-	color: var(--nord8);
-	margin-bottom: 0;
+	color: var(--nord4);
+	margin-bottom: 5px;
 `;
 
 const Blinker = styled(H1Name)`
-	color: var(--nord15);
-	animation: blink-animation 1.5s steps(5, start) infinite;
+	color: var(--nord8);
+	animation: blink-animation 1.25s steps(2, start) infinite;
 	@keyframes blink-animation {
 		to {
 			visibility: hidden;
@@ -54,6 +54,7 @@ export const Header = (props: Props) => {
 		<StyledHeader>
 			<NameContainer>
 				<H1Name>Kyle McKell</H1Name>
+				<h3>&nbsp;</h3>
 				<Blinker>|</Blinker>
 			</NameContainer>
 			<Separator />
