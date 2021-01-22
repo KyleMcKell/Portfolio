@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "components/navbar/Navbar";
 import { Body } from "components/Body";
+import { Header } from "components/Header";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -36,6 +37,7 @@ const App: React.FC = () => {
 		<>
 			<GlobalStyle />
 			<Navbar />
+			<Header />
 			<Body />
 		</>
 	);

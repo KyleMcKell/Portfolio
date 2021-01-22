@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { About } from "./About";
-import { Header } from "./Header";
 
 interface Props {}
 
 const StyledMain = styled.main`
-	margin-left: 5rem;
+	margin-left: calc(5rem + 6px);
 	background: var(--nord1);
 	height: 100vh;
 	color: var(--nord6);
@@ -19,7 +18,6 @@ const StyledMain = styled.main`
 export const Body = (props: Props) => {
 	return (
 		<>
-			<Header />
 			<StyledMain>
 				<About />
 			</StyledMain>

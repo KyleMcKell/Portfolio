@@ -50,11 +50,11 @@ const AboutContainer = styled.div`
 	height: 30vh;
 	align-items: center;
 	justify-content: space-evenly;
-	background-color: var(--nord6);
+	background-color: var(--nord4);
 	margin: 0;
 	padding: 0;
-	border-bottom: 6px var(--nord9) solid;
-	border-top: 6px var(--nord9) solid;
+	border-bottom: 6px var(--nord13) solid;
+	border-top: 6px var(--nord12) solid;
 `;
 
 const TechText = styled.h2`
@@ -68,8 +68,8 @@ export const About = (props: Props) => {
 	return (
 		<AboutContainer>
 			<TechText>
-				My name is Kyle McKell. I'm a Front-End Developer specializing in React
-				applications with TypeScript.
+				Hey there 🤙 I'm a Front-End Developer specializing in React
+				applications with TypeScript
 			</TechText>
 			<LogoContainer>
 				{logos.map((logo) => {
