@@ -53,8 +53,8 @@ const AboutContainer = styled.div`
 	background: var(--nord1);
 	margin: 0;
 	padding: 1rem;
-	border: 10px var(--nord10) solid;
 	border-radius: 20px;
+	box-shadow: 8px 8px 5px var(--nord0);
 `;
 const TechText = styled.h2`
 	color: var(--nord6);

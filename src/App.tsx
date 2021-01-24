@@ -30,11 +30,26 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
+	background-size: 400% 400%;
+	
 	background-image: linear-gradient(
-		to right bottom,
+		-140deg,
 		var(--nord3),
-		var(--nord0)
+		var(--nord1)
 	);
+	animation: gradient 45s linear infinite
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0%
+	}
+	50% {
+		background-position: 100%
+	}
+	100% {
+		background-position: 0%
+	}
 }
 `;
 
