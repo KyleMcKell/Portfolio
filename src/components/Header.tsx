@@ -6,11 +6,14 @@ interface Props {}
 const StyledHeader = styled.header`
 	height: 200px;
 	width: auto;
-	margin-left: calc(5rem + 6px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+
+	@media only screen and (orientation: landscape) {
+		margin-left: calc(5rem + 6px);
+	}
 `;
 
 const NameContainer = styled.div`

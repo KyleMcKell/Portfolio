@@ -7,7 +7,9 @@ interface Props {
 }
 
 const StyledMain = styled.main`
-	margin-left: calc(5rem + 6px);
+	@media only screen and (orientation: landscape) {
+		margin-left: calc(5rem + 6px);
+	}
 
 	height: 100vh;
 	color: var(--nord6);
