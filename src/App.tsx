@@ -30,14 +30,14 @@ body {
 	padding: 0;
 	margin: 0;
 	overflow: hidden;
-	background-size: 400% 400%;
+	background-size: 200% 200%;
 	
 	background-image: linear-gradient(
-		-140deg,
+		-45deg,
 		var(--nord3),
 		var(--nord1)
 	);
-	animation: gradient 45s ease infinite
+	animation: gradient 30s ease infinite
 }
 
 @keyframes gradient {

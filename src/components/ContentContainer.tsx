@@ -14,6 +14,7 @@ const ContentContainerStyling = styled.div`
 	background: var(--nord1);
 	margin: 0;
 	padding: 1rem;
+	border: 4px solid var(--nord3);
 	border-radius: 20px;
 	box-shadow: 8px 8px 5px var(--nord0);
 `;
