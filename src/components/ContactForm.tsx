@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com";
 
 interface Props {}
 
-const StyledField = styled.form`
+const StyledForm = styled.form`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -87,9 +88,30 @@ const SubmitButton = styled.button`
 	}
 `;
 
+const SubjectArea = styled(OneLineInput)`
+	width: 36em;
+`;
+
+const sendEmail = (e: any) => {
+	e.preventDefault();
+
+	emailjs
+		.sendForm("gmail", "contact-me", e.target, "user_vManlYtWcUHq4SZAbx5T0")
+		.then(
+			(result) => {
+				console.log(result.text);
+			},
+			(error) => {
+				console.log(error.text);
+			}
+		);
+	e.target.reset();
+	alert("email sent!");
+};
+
 export const ContactForm = (props: Props) => {
 	return (
-		<StyledField action="submit">
+		<StyledForm action="submit" onSubmit={sendEmail}>
 			<ContactInfoDiv>
 				<LabelInputDiv>
 					<label htmlFor="name">Name</label>
@@ -101,12 +123,16 @@ export const ContactForm = (props: Props) => {
 				</LabelInputDiv>
 			</ContactInfoDiv>
 			<LabelInputDiv>
+				<label htmlFor="message">Subject</label>
+				<SubjectArea name="subject" type="text" />
+			</LabelInputDiv>
+			<LabelInputDiv>
 				<label htmlFor="message">Message</label>
 				<MessageArea name="message" />
 			</LabelInputDiv>
 			<div className="ButtonDiv">
-				<SubmitButton type="button">Send</SubmitButton>
+				<SubmitButton type="submit">Send</SubmitButton>
 			</div>
-		</StyledField>
+		</StyledForm>
 	);
 };

@@ -32,7 +32,7 @@ const NavBar = styled.nav`
 `;
 
 interface navbarElement {
-	img: any;
+	img: string;
 	text: string;
 	src: string;
 }
@@ -70,7 +70,7 @@ export const Navbar = (props: Props) => {
 		if (src.split("/").length === 1) {
 			props.setContent(src);
 		} else {
-			return (window.location.href = `${src}`);
+			return window.open(`${src}`, "_blank");
 		}
 	};
 
@@ -79,7 +79,7 @@ export const Navbar = (props: Props) => {
 			<NavBarNav>
 				{navbarElements.map((el) => {
 					return (
-						<NavListElement>
+						<NavListElement key={`${el.text}element`}>
 							<NavLink onClick={() => handleClick(el.src)}>
 								<NavListImg src={`${el.img}`} alt={"ah shoot"} />
 								<NavLinkText>{el.text}</NavLinkText>

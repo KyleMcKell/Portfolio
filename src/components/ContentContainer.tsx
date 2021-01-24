@@ -23,7 +23,7 @@ interface Props {
 	content: string;
 }
 
-export const ContentContainer = (props: Props) => {
+export const ContentContainer: React.FC<Props> = (props: Props) => {
 	const shownContent = () => {
 		switch (props.content) {
 			case "about":
