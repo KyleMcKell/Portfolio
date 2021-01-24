@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
 body {
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
+	overflow: hidden;
 	background-size: 400% 400%;
 	
 	background-image: linear-gradient(
