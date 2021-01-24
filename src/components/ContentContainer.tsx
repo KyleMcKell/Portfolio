@@ -23,9 +23,7 @@ interface Props {
 	content: string;
 }
 
-const swipeOver = () => {
-	
-}
+const swipeOver = () => {};
 
 export const ContentContainer = (props: Props) => {
 	const shownContent = () => {
