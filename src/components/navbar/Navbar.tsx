@@ -9,6 +9,7 @@ import crow from "images/crow.png";
 import feather from "images/feather.png";
 import code from "images/code.png";
 import mountain from "images/mountain.png";
+import github from "../../images/github.png";
 
 interface Props {
 	setContent: React.Dispatch<React.SetStateAction<string>>;
@@ -57,11 +58,20 @@ const navbarElements: navbarElement[] = [
 		text: "Contact",
 		src: "contact",
 	},
+	{
+		img: github,
+		text: "My GitHub",
+		src: "https://github.com/kylemckell",
+	},
 ];
 
 export const Navbar = (props: Props) => {
 	const handleClick = (src: string) => {
-		props.setContent(src);
+		if (src.split("/").length === 1) {
+			props.setContent(src);
+		} else {
+			return (window.location.href = `${src}`);
+		}
 	};
 
 	return (
