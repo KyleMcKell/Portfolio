@@ -7,8 +7,8 @@ import js from "images/logos/javascript.png";
 import react from "images/logos/react.png";
 import ts from "images/logos/typescript.png";
 import TechnologyLogo from "./TechnologyLogo";
-import ContentContainer from "./ContentContainer";
-import styled from "styled-components";
+import H2Text from "./H2Text";
+import Separator from "./Separator";
 
 interface Props {}
 
@@ -44,26 +44,11 @@ const logos: logo[] = [
 	},
 ];
 
-const TechText = styled.h2`
-	color: var(--nord6);
-	text-align: center;
-	margin: 0rem 3rem;
-	font-size: 1.5rem;
-`;
-
-const Separator = styled.div`
-	background-color: var(--nord5);
-	height: 0.5rem;
-	width: 70%;
-	margin-top: 0;
-	margin-bottom: 1rem;
-`;
-
 export const About = (props: Props) => {
 	return (
 		<>
-			<TechText>Hey there 🤙</TechText>
-			<TechText> I'm a React Front-End Developer</TechText>
+			<H2Text>Hey there 🤙</H2Text>
+			<H2Text> I'm a React Front-End Developer</H2Text>
 			<Separator />
 			<LogoContainer>
 				{logos.map((logo) => {

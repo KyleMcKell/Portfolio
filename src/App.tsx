@@ -3,7 +3,6 @@ import { Navbar } from "components/navbar/Navbar";
 import { Body } from "components/Body";
 import { Header } from "components/Header";
 import { createGlobalStyle } from "styled-components";
-import { About } from "components/About";
 
 const GlobalStyle = createGlobalStyle`
 :root {

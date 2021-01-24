@@ -60,13 +60,17 @@ const navbarElements: navbarElement[] = [
 ];
 
 export const Navbar = (props: Props) => {
+	const handleClick = (src: string) => {
+		props.setContent(src);
+	};
+
 	return (
 		<NavBar>
 			<NavBarNav>
 				{navbarElements.map((el) => {
 					return (
 						<NavListElement>
-							<NavLink href={`/${el.src}`}>
+							<NavLink onClick={() => handleClick(el.src)}>
 								<NavListImg src={`${el.img}`} alt={"ah shoot"} />
 								<NavLinkText>{el.text}</NavLinkText>
 							</NavLink>

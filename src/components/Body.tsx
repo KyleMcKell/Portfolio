@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import ContentContainer from "./ContentContainer";
-import { About } from "./About";
-import { Contact } from "./Contact";
 
 interface Props {
 	content: string;
