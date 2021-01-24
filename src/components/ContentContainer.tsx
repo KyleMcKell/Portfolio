@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import React from "react";
-import { About } from "./About";
-import { Contact } from "./Contact";
-import { Portfolio } from "./Portfolio";
+import { About } from "components/About";
+import { Contact } from "components/Contact";
+import { Projects } from "components/Projects";
 
 const ContentContainerStyling = styled.div`
 	display: flex;
@@ -29,8 +29,8 @@ export const ContentContainer = (props: Props) => {
 				return <About />;
 			case "contact":
 				return <Contact />;
-			case "portfolio":
-				return <Portfolio />;
+			case "projects":
+				return <Projects />;
 			default:
 				return <About />;
 		}

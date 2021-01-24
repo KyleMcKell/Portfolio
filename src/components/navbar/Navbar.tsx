@@ -50,8 +50,8 @@ const navbarElements: navbarElement[] = [
 	},
 	{
 		img: code,
-		text: "Portfolio",
-		src: "portfolio",
+		text: "Projects",
+		src: "projects",
 	},
 	{
 		img: feather,

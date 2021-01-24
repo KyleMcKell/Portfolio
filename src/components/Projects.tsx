@@ -20,7 +20,7 @@ const projects: Project[] = [
 	},
 ];
 
-export const Portfolio = (props: Props) => {
+export const Projects = (props: Props) => {
 	return (
 		<>
 			<H2Text>My Projects</H2Text>
