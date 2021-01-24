@@ -3,7 +3,6 @@ import styled from "styled-components";
 const NavLink = styled.a`
 	display: flex;
 	align-items: center;
-	justify-content: left;
 	color: var(--nord6);
 	text-decoration: none;
 	height: 5rem;
@@ -16,6 +15,13 @@ const NavLink = styled.a`
 
 	:hover img {
 		filter: none;
+	}
+
+	@media only screen and (orientation: landscape) {
+		justify-content: left;
+	}
+	@media only screen and (orientation: portrait) {
+		justify-content: center;
 	}
 `;
 

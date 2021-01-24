@@ -16,18 +16,29 @@ interface Props {
 }
 
 const NavBar = styled.nav`
-	width: 5rem;
-	height: 100vh;
-	position: fixed;
-	transition: width 200ms ease-out;
 	background: var(--nord0);
 
-	:hover {
-		width: 20rem;
+	@media only screen and (orientation: landscape) {
+		width: 5rem;
+		height: 100vh;
+		position: fixed;
+		transition: width 200ms ease-out;
+
+		:hover {
+			width: 20rem;
+		}
+
+		:hover span {
+			display: inline;
+		}
 	}
 
-	:hover span {
-		display: inline;
+	@media only screen and (orientation: portrait) {
+		height: 10vh;
+		width: 100%;
+		position: fixed;
+		bottom: 0;
+		right: 0;
 	}
 `;
 
