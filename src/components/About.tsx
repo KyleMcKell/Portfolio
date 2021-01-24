@@ -81,7 +81,9 @@ export const About = (props: Props) => {
 			<Separator />
 			<LogoContainer>
 				{techIcons.map((icon) => {
-					return <TechnologyLogo src={icon.src} alt={icon.name} />;
+					return (
+						<TechnologyLogo src={icon.src} alt={icon.name} key={icon.name} />
+					);
 				})}
 			</LogoContainer>
 		</>

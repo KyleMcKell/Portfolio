@@ -79,7 +79,7 @@ export const Navbar = (props: Props) => {
 			<NavBarNav>
 				{navbarElements.map((el) => {
 					return (
-						<NavListElement>
+						<NavListElement key={`${el.text}element`}>
 							<NavLink onClick={() => handleClick(el.src)}>
 								<NavListImg src={`${el.img}`} alt={"ah shoot"} />
 								<NavLinkText>{el.text}</NavLinkText>
