@@ -70,7 +70,7 @@ export const Navbar = (props: Props) => {
 		if (src.split("/").length === 1) {
 			props.setContent(src);
 		} else {
-			return (window.location.href = `${src}`);
+			return window.open(`${src}`, "_blank");
 		}
 	};
 

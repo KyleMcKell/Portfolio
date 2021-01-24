@@ -28,7 +28,7 @@ const ProjectImg = styled.img`
 
 export const ProjectBox: React.FC<Props> = ({ project }) => {
 	const handleClick = (url: string) => {
-		return (window.location.href = `${url}`);
+		return window.open(`${url}`, "_blank");
 	};
 
 	return (
