@@ -22,6 +22,8 @@ const NavLink = styled.a`
 	}
 	@media only screen and (orientation: portrait) {
 		justify-content: center;
+		display: flex;
+		flex-direction: column;
 	}
 `;
 

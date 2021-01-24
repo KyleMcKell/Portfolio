@@ -39,6 +39,15 @@ const NavBar = styled.nav`
 		position: fixed;
 		bottom: 0;
 		right: 0;
+		transition: height 200ms ease-out;
+
+		:hover {
+			height: 12vh;
+		}
+
+		:hover span {
+			display: inline;
+		}
 	}
 `;
 
