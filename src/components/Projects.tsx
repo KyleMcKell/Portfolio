@@ -5,12 +5,12 @@ import { ProjectBox } from "./ProjectBox";
 
 interface Props {}
 
-interface Project {
+export type Project = {
 	name: string;
 	url: string;
 	description: string;
 	image: any;
-}
+};
 
 const projects: Project[] = [
 	{
