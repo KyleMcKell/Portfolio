@@ -37,7 +37,7 @@ body {
 		var(--nord3),
 		var(--nord1)
 	);
-	animation: gradient 45s linear infinite
+	animation: gradient 45s ease infinite
 }
 
 @keyframes gradient {
