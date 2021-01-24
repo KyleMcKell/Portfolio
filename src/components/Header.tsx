@@ -27,9 +27,9 @@ const H1Name = styled.h1`
 	white-space: nowrap;
 	overflow: hidden;
 	trasnform: translateY(-50%);
-	border-right: 6px solid var(--nord3);
+	border-right: 6px solid transparent;
 	animation: typewriter 2s steps(12) 2s 1 normal both,
-		blinkTextCursor 1.25s steps(2, start) infinite;
+		blinkTextCursor 1.25s steps(2, start) 5;
 
 	@keyframes typewriter {
 		from {
@@ -62,7 +62,7 @@ export const Header = (props: Props) => {
 	return (
 		<StyledHeader>
 			<NameContainer>
-				<H1Name>Kyle McKell&nbsp;</H1Name>
+				<H1Name>Kyle McKell</H1Name>
 			</NameContainer>
 			<Separator />
 		</StyledHeader>
