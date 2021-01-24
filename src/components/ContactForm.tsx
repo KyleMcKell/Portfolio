@@ -23,7 +23,7 @@ const LabelInputDiv = styled.div`
 const OneLineInput = styled.input`
 	height: 2rem;
 	padding: 0.2em 1em;
-	width: 12em;
+	width: 14.5em;
 	border: none;
 	border-radius: 5px;
 	background-color: var(--nord3);
@@ -53,6 +53,8 @@ const MessageArea = styled.textarea`
 	color: var(--nord6);
 	margin-top: 0.3rem;
 	font-size: 0.8rem;
+	max-width: 70em;
+	max-height: 15em;
 
 	:focus {
 		background-color: var(--nord4);

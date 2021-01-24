@@ -28,7 +28,7 @@ const H1Name = styled.h1`
 	overflow: hidden;
 	trasnform: translateY(-50%);
 	border-right: 6px solid transparent;
-	animation: typewriter 2s steps(12) 2s 1 normal both,
+	animation: typewriter 2s steps(11) 2s 1 normal both,
 		blinkTextCursor 1.25s steps(2, start) 5;
 
 	@keyframes typewriter {
@@ -36,7 +36,7 @@ const H1Name = styled.h1`
 			width: 0;
 		}
 		to {
-			width: 460px;
+			width: 422px;
 		}
 	}
 
