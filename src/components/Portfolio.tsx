@@ -11,13 +11,25 @@ interface Project {
 	image: any;
 }
 
-const projects: Project[] = [];
+const projects: Project[] = [
+	{
+		name: "Pokedex",
+		url: "https://kylemckell.github.io/Pokedex/",
+		description: "Pokedex app made with React and PokeAPI",
+		image: "",
+	},
+];
 
 export const Portfolio = (props: Props) => {
 	return (
 		<>
 			<H2Text>My Projects</H2Text>
 			<Separator />
+			<div>
+				{projects.map((project) => {
+					return <div>{project.name}</div>;
+				})}
+			</div>
 		</>
 	);
 };
