@@ -11,6 +11,7 @@ const NavLink = styled.a`
 
 	:hover {
 		color: var(--nord1);
+		cursor: pointer;
 	}
 
 	:hover img {
