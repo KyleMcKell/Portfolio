@@ -1,6 +1,7 @@
 import React from "react";
 import H2Text from "components/H2Text";
 import Separator from "components/Separator";
+import { ProjectBox } from "./ProjectBox";
 
 interface Props {}
 
@@ -25,11 +26,13 @@ export const Projects = (props: Props) => {
 		<>
 			<H2Text>My Projects</H2Text>
 			<Separator />
-			<div>
-				{projects.map((project) => {
-					return <div>{project.name}</div>;
-				})}
-			</div>
+			{
+				<div>
+					{projects.map((project) => {
+						return <ProjectBox project={project} />;
+					})}
+				</div>
+			}
 		</>
 	);
 };

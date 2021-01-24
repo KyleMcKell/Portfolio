@@ -15,7 +15,7 @@ import styled from "styled-components";
 interface Props {}
 
 interface TechIcon {
-	src: any;
+	src: string;
 	name: string;
 }
 

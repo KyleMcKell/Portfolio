@@ -32,7 +32,7 @@ const NavBar = styled.nav`
 `;
 
 interface navbarElement {
-	img: any;
+	img: string;
 	text: string;
 	src: string;
 }
