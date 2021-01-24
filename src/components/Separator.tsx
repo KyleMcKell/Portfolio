@@ -4,8 +4,6 @@ const Separator = styled.div`
 	background-color: var(--nord5);
 	height: 0.5rem;
 	width: 70%;
-	margin-top: 0;
-	margin-bottom: 1rem;
 `;
 
 export default Separator;
