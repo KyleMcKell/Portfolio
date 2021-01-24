@@ -10,7 +10,9 @@ import feather from "images/feather.png";
 import code from "images/code.png";
 import mountain from "images/mountain.png";
 
-interface Props {}
+interface Props {
+	setContent: React.Dispatch<React.SetStateAction<string>>;
+}
 
 const NavBar = styled.nav`
 	width: 5rem;
@@ -38,7 +40,7 @@ const navbarElements: navbarElement[] = [
 	{
 		img: crow,
 		text: "Kyle McKell",
-		src: "about",
+		src: "",
 	},
 	{
 		img: mountain,
@@ -64,7 +66,7 @@ export const Navbar = (props: Props) => {
 				{navbarElements.map((el) => {
 					return (
 						<NavListElement>
-							<NavLink>
+							<NavLink href={`/${el.src}`}>
 								<NavListImg src={`${el.img}`} alt={"ah shoot"} />
 								<NavLinkText>{el.text}</NavLinkText>
 							</NavLink>

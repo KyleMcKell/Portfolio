@@ -7,6 +7,7 @@ import js from "images/logos/javascript.png";
 import react from "images/logos/react.png";
 import ts from "images/logos/typescript.png";
 import TechnologyLogo from "./TechnologyLogo";
+import ContentContainer from "./ContentContainer";
 import styled from "styled-components";
 
 interface Props {}
@@ -43,24 +44,11 @@ const logos: logo[] = [
 	},
 ];
 
-const AboutContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	width: 60%;
-	height: 30vh;
-	align-items: center;
-	justify-content: space-evenly;
-	background: var(--nord1);
-	margin: 0;
-	padding: 1rem;
-	border-radius: 20px;
-	box-shadow: 8px 8px 5px var(--nord0);
-`;
 const TechText = styled.h2`
 	color: var(--nord6);
 	text-align: center;
 	margin: 0rem 3rem;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 `;
 
 const Separator = styled.div`
@@ -73,7 +61,7 @@ const Separator = styled.div`
 
 export const About = (props: Props) => {
 	return (
-		<AboutContainer>
+		<>
 			<TechText>Hey there 🤙</TechText>
 			<TechText> I'm a React Front-End Developer</TechText>
 			<Separator />
@@ -82,6 +70,6 @@ export const About = (props: Props) => {
 					return <TechnologyLogo src={logo.src} alt={logo.name} />;
 				})}
 			</LogoContainer>
-		</AboutContainer>
+		</>
 	);
 };

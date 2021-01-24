@@ -1,8 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import ContentContainer from "./ContentContainer";
 import { About } from "./About";
+import { Contact } from "./Contact";
 
-interface Props {}
+interface Props {
+	content: string;
+}
 
 const StyledMain = styled.main`
 	margin-left: calc(5rem + 6px);
@@ -19,7 +23,7 @@ export const Body = (props: Props) => {
 	return (
 		<>
 			<StyledMain>
-				<About />
+				<ContentContainer content={props.content} />
 			</StyledMain>
 		</>
 	);
