@@ -17,6 +17,14 @@ const ContentContainerStyling = styled.div`
 	border: 4px solid var(--nord3);
 	border-radius: 20px;
 	box-shadow: 8px 8px 5px var(--nord0);
+
+	@media only screen and (max-width: 1100px) {
+		width: 80%;
+	}
+
+	@media only screen and (max-width: 800px) {
+		width: 90%;
+	}
 `;
 
 interface Props {
