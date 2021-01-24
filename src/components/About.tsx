@@ -64,7 +64,7 @@ const SelfieStyle = styled.img`
 	width: 15rem;
 	border-radius: 50%;
 	border: 5px solid var(--nord9);
-	filter: grayscale(50%);
+	filter: grayscale(20%);
 `;
 
 export const About = (props: Props) => {
@@ -73,7 +73,7 @@ export const About = (props: Props) => {
 			<AboutSelfDiv>
 				<TextDiv>
 					<H2Text>Hey there 🤙</H2Text>
-					<H2Text>I'm Kyle</H2Text>
+					<H2Text>Nice to Meet You</H2Text>
 					<H2Text>I'm a Front-End React Developer</H2Text>
 				</TextDiv>
 				<SelfieStyle src={selfie} alt="picture of me" />
