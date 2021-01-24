@@ -1,7 +1,7 @@
 import React from "react";
-import { ContactForm } from "./ContactForm";
-import H2Text from "./H2Text";
-import Separator from "./Separator";
+import { ContactForm } from "components/ContactForm";
+import H2Text from "components/H2Text";
+import Separator from "components/Separator";
 
 interface Props {}
 

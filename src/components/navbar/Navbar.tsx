@@ -5,11 +5,11 @@ import NavBarNav from "components/navbar/NavbarNav";
 import NavLink from "components/navbar/NavLink";
 import NavListImg from "components/navbar/NavListImg";
 import NavLinkText from "components/navbar/NavLinkText";
-import crow from "images/crow.png";
-import feather from "images/feather.png";
-import code from "images/code.png";
-import mountain from "images/mountain.png";
-import github from "../../images/github.png";
+import crow from "images/nav-icons/crow.png";
+import feather from "images/nav-icons/feather.png";
+import code from "images/nav-icons/code.png";
+import mountain from "images/nav-icons/mountain.png";
+import github from "images/nav-icons/github.png";
 
 interface Props {
 	setContent: React.Dispatch<React.SetStateAction<string>>;

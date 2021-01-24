@@ -6,9 +6,9 @@ import html5 from "images/logos/html5.png";
 import js from "images/logos/javascript.png";
 import react from "images/logos/react.png";
 import ts from "images/logos/typescript.png";
-import TechnologyLogo from "./TechnologyLogo";
-import H2Text from "./H2Text";
-import Separator from "./Separator";
+import TechnologyLogo from "components/TechnologyLogo";
+import H2Text from "components/H2Text";
+import Separator from "components/Separator";
 
 interface Props {}
 
