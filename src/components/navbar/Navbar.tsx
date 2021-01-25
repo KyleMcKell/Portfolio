@@ -20,7 +20,7 @@ const NavBar = styled.nav`
 
 	@media only screen and (orientation: landscape) {
 		width: 5rem;
-		height: 100%;
+		height: 100vh;
 		position: fixed;
 		transition: width 200ms ease-out;
 
@@ -35,7 +35,7 @@ const NavBar = styled.nav`
 
 	@media only screen and (orientation: portrait) {
 		height: 10vh;
-		width: 100%;
+		width: 100vw;
 		top: 0;
 		right: 0;
 		transition: height 200ms ease-out;
