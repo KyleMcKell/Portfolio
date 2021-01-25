@@ -5,13 +5,13 @@ const NavListElement = styled.li`
 	font-weight: bold;
 	font-size: 1.2rem;
 	transition: background-color 300ms linear;
+	overflow: hidden;
 
 	:hover {
 		background-color: var(--nord4);
 	}
 
 	@media only screen and (orientation: landscape) {
-		overflow: hidden;
 		white-space: nowrap;
 		:first-child {
 			text-transform: uppercase;
@@ -37,9 +37,8 @@ const NavListElement = styled.li`
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		width: 20%;
 		text-align: center;
-		font-size: 0.8rem;
+		font-size: 1rem;
 
 		:hover img {
 			display: none;
@@ -48,6 +47,10 @@ const NavListElement = styled.li`
 		:hover span {
 			display: inline;
 		}
+	}
+
+	@media only screen and (max-width: 500px) {
+		font-size: 0.8rem;
 	}
 `;
 
