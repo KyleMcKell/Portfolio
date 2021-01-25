@@ -49,7 +49,7 @@ const NavListElement = styled.li`
 		}
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: 800px) {
+	@media only screen and (orientation: landscape) and (max-width: 1000px) {
 		height: 100%;
 		text-align: center;
 		font-size: 0.8rem;
