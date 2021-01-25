@@ -49,6 +49,13 @@ const techIcons: TechIcon[] = [
 const AboutSelfDiv = styled.div`
 	display: flex;
 	flex-direction: row;
+
+	@media only screen and (max-width: 1000px) {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
 `;
 
 const TextDiv = styled.div`
@@ -57,6 +64,7 @@ const TextDiv = styled.div`
 	height: 100%;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
 `;
 
 const SelfieStyle = styled.img`

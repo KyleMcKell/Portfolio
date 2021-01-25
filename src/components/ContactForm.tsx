@@ -13,6 +13,10 @@ const StyledForm = styled.form`
 
 const ContactInfoDiv = styled.div`
 	display: flex;
+
+	@media only screen and (max-width: 1000px) {
+		flex-direction: column;
+	}
 `;
 
 const LabelInputDiv = styled.div`
@@ -39,6 +43,14 @@ const OneLineInput = styled.input`
 	}
 `;
 
+const SubjectArea = styled(OneLineInput)`
+	width: 36em;
+
+	@media only screen and (max-width: 1000px) {
+		width: 14.5em;
+	}
+`;
+
 const MessageArea = styled.textarea`
 	width: 36em;
 	height: 60px;
@@ -60,6 +72,12 @@ const MessageArea = styled.textarea`
 	:focus {
 		background-color: var(--nord4);
 		color: var(--nord0);
+	}
+
+	@media only screen and (max-width: 1000px) {
+		width: 14.5em;
+		max-width: 20em;
+		max-height: 50em;
 	}
 `;
 
@@ -86,10 +104,6 @@ const SubmitButton = styled.button`
 		margin-top: 0.9rem;
 		margin-bottom: 0.1rem;
 	}
-`;
-
-const SubjectArea = styled(OneLineInput)`
-	width: 36em;
 `;
 
 const sendEmail = (e: any) => {

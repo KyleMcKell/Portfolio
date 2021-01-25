@@ -5,6 +5,7 @@ const TechnologyLogo = styled.img`
 	height: 80px;
 	filter: grayscale(100%);
 	transition: filter ease-in-out 300ms;
+	margin: 0.5rem;
 
 	:hover {
 		filter: grayscale(0%);

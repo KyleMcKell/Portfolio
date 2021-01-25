@@ -31,7 +31,7 @@ body {
 	margin: 0;
 	height: 100vh;
 	width: 100vw;
-	background-size: 200% 200%;
+	background-size: 400% 400%;
 	
 	background-image: linear-gradient(
 		-45deg,

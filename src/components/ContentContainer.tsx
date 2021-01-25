@@ -13,6 +13,7 @@ const ContentContainerStyling = styled.div`
 	justify-content: space-evenly;
 	background: var(--nord1);
 	margin: 0;
+	margin-bottom: 2rem;
 	padding: 3rem;
 	border: 4px solid var(--nord3);
 	border-radius: 20px;
@@ -23,11 +24,9 @@ const ContentContainerStyling = styled.div`
 	}
 
 	@media only screen and (max-width: 800px) {
-		width: 90%;
-	}
-
-	@media only screen and (max-width: 500px) {
-		width: 60%;
+		max-width: 100%;
+		padding: 0rem;
+		padding-bottom: 1rem;
 	}
 `;
 
