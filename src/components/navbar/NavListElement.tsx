@@ -11,7 +11,7 @@ const NavListElement = styled.li`
 		background-color: var(--nord4);
 	}
 
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) and (min-width: 800px) {
 		white-space: nowrap;
 		:first-child {
 			text-transform: uppercase;
@@ -46,6 +46,21 @@ const NavListElement = styled.li`
 
 		:hover span {
 			display: inline;
+		}
+	}
+
+	@media only screen and (orientation: landscape) and (max-width: 800px) {
+		height: 100%;
+		text-align: center;
+		font-size: 0.8rem;
+
+		:hover img {
+			display: none;
+		}
+
+		:hover span {
+			display: inline;
+			text-align: center;
 		}
 	}
 `;

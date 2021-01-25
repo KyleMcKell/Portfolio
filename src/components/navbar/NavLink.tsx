@@ -17,9 +17,14 @@ const NavLink = styled.a`
 		filter: none;
 	}
 
-	@media only screen and (orientation: landscape) {
+	@media only screen and (orientation: landscape) and (min-width: 800px) {
 		justify-content: left;
 	}
+
+	@media only screen and (orientation: landscape) and (max-width: 800px) {
+		justify-content: center;
+	}
+
 	@media only screen and (orientation: portrait) {
 		justify-content: center;
 		display: flex;
