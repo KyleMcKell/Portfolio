@@ -41,9 +41,6 @@ const NavBar = styled.nav`
 		transition: height 200ms ease-out;
 		margin: 0;
 
-		:hover {
-		}
-
 		:hover span {
 			display: inline;
 		}
