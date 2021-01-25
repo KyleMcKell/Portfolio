@@ -11,7 +11,7 @@ const NavListElement = styled.li`
 		background-color: var(--nord4);
 	}
 
-	@media only screen and (orientation: landscape) and (min-width: 800px) {
+	@media only screen and (orientation: landscape) and (min-width: 1000px) {
 		white-space: nowrap;
 		:first-child {
 			text-transform: uppercase;

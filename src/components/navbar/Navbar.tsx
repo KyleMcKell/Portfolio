@@ -17,8 +17,9 @@ interface Props {
 
 const NavBar = styled.nav`
 	background: var(--nord0);
+	z-index: 100;
 
-	@media only screen and (orientation: landscape) and (min-width: 800px) {
+	@media only screen and (orientation: landscape) and (min-width: 1000px) {
 		width: 5rem;
 		height: 100vh;
 		position: fixed;
@@ -33,7 +34,7 @@ const NavBar = styled.nav`
 		}
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: 800px) {
+	@media only screen and (orientation: landscape) and (max-width: 1000px) {
 		width: 5rem;
 		height: 100vh;
 		position: fixed;

@@ -17,11 +17,11 @@ const NavLink = styled.a`
 		filter: none;
 	}
 
-	@media only screen and (orientation: landscape) and (min-width: 800px) {
+	@media only screen and (orientation: landscape) and (min-width: 1000px) {
 		justify-content: left;
 	}
 
-	@media only screen and (orientation: landscape) and (max-width: 800px) {
+	@media only screen and (orientation: landscape) and (max-width: 1000px) {
 		justify-content: center;
 	}
 
