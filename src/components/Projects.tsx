@@ -21,6 +21,18 @@ const projects: Project[] = [
 		description: "Pokedex app made with React and PokeAPI",
 		img: pokedex,
 	},
+	{
+		name: "Pokedex",
+		url: "https://kylemckell.github.io/Pokedex/",
+		description: "Pokedex app made with React and PokeAPI",
+		img: pokedex,
+	},
+	{
+		name: "Pokedex",
+		url: "https://kylemckell.github.io/Pokedex/",
+		description: "Pokedex app made with React and PokeAPI",
+		img: pokedex,
+	},
 ];
 
 const ProjectContainer = styled.div`

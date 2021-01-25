@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 const NavLinkText = styled.span`
-	display: none;
+	@media only screen and (orientation: landscape) {
+		display: none;
+	}
 `;
 
 export default NavLinkText;

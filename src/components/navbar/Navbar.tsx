@@ -36,13 +36,12 @@ const NavBar = styled.nav`
 	@media only screen and (orientation: portrait) {
 		height: 10vh;
 		width: 100%;
-		position: fixed;
-		bottom: 0;
+		top: 0;
 		right: 0;
 		transition: height 200ms ease-out;
+		margin: 0;
 
 		:hover {
-			height: 12vh;
 		}
 
 		:hover span {
