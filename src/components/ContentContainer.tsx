@@ -16,7 +16,7 @@ const ContentContainerStyling = styled.div`
 	padding: 1rem;
 	border: 4px solid var(--nord3);
 	border-radius: 20px;
-	box-shadow: 8px 8px 5px var(--nord0);
+	box-shadow: 16px 16px 16px var(--nord0);
 
 	@media only screen and (max-width: 1100px) {
 		width: 80%;

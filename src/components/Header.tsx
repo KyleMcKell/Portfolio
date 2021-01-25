@@ -26,6 +26,7 @@ const H1Name = styled.h1`
 	font-weight: bold;
 	color: var(--nord4);
 	margin-bottom: 5px;
+	margin-top: 0px;
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
