@@ -38,7 +38,7 @@ const NavListElement = styled.li`
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		font-size: 1rem;
+		font-size: 0.8rem;
 
 		:hover img {
 			display: none;
@@ -47,10 +47,6 @@ const NavListElement = styled.li`
 		:hover span {
 			display: inline;
 		}
-	}
-
-	@media only screen and (max-width: 500px) {
-		font-size: 0.8rem;
 	}
 `;
 
