@@ -7,6 +7,10 @@ const TechnologyLogo = styled.img`
 	transition: filter ease-in-out 300ms;
 	margin: 0.5rem;
 
+	@media only screen and (orientation: landscape) {
+		margin: 1rem 2rem;
+	}
+
 	:hover {
 		filter: grayscale(0%);
 	}

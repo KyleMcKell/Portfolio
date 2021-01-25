@@ -81,7 +81,7 @@ export const About = (props: Props) => {
 			<AboutSelfDiv>
 				<TextDiv>
 					<H2Text>Hey there 🤙</H2Text>
-					<H2Text>Nice to Meet You</H2Text>
+					<H2Text>Nice to Meet You!</H2Text>
 					<H2Text>I'm a Front-End React Developer</H2Text>
 				</TextDiv>
 				<SelfieStyle src={selfie} alt="picture of me" />
