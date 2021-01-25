@@ -5,14 +5,14 @@ const NavListElement = styled.li`
 	font-weight: bold;
 	font-size: 1.2rem;
 	transition: background-color 300ms linear;
-	overflow: hidden;
-	white-space: nowrap;
 
 	:hover {
 		background-color: var(--nord4);
 	}
 
 	@media only screen and (orientation: landscape) {
+		overflow: hidden;
+		white-space: nowrap;
 		:first-child {
 			text-transform: uppercase;
 			font-size: 2rem;
@@ -38,6 +38,8 @@ const NavListElement = styled.li`
 		align-items: center;
 		justify-content: center;
 		width: 20%;
+		text-align: center;
+		font-size: 0.8rem;
 
 		:hover img {
 			display: none;
