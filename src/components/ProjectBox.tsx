@@ -12,6 +12,7 @@ const ProjectContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0.5rem;
 
 	:hover {
 		cursor: pointer;
@@ -19,8 +20,8 @@ const ProjectContainer = styled.div`
 `;
 
 const ProjectImg = styled.img`
-	height: 15rem;
-	width: 15rem;
+	height: 90%;
+	width: 100%;
 	border: 3px solid var(--nord4);
 	border-radius: 5px;
 	box-shadow: 3px 3px 5px var(--nord0);

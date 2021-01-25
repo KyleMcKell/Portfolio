@@ -20,7 +20,7 @@ const NavBar = styled.nav`
 
 	@media only screen and (orientation: landscape) {
 		width: 5rem;
-		height: 100vh;
+		height: 100%;
 		position: fixed;
 		transition: width 200ms ease-out;
 

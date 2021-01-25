@@ -30,36 +30,46 @@ const H1Name = styled.h1`
 	text-align: center;
 	white-space: nowrap;
 	overflow: hidden;
-	trasnform: translateY(-50%);
 	border-right: 6px solid transparent;
-	animation: typewriter 2s steps(11) 2s 1 normal both,
-		blinkTextCursor 1.25s steps(2, start) 5;
 
-	@keyframes typewriter {
-		from {
-			width: 0;
+	@media only screen and (min-width: 800px) {
+		animation: typewriter 2s steps(11) 2s 1 normal both,
+			blinkTextCursor 1.25s steps(2, start) 5;
+
+		@keyframes typewriter {
+			from {
+				width: 0;
+			}
+			to {
+				width: 422px;
+			}
 		}
-		to {
-			width: 422px;
+
+		@keyframes blinkTextCursor {
+			from {
+				border-right-color: var(--nord4);
+			}
+			to {
+				border-right-color: transparent;
+			}
 		}
 	}
 
-	@keyframes blinkTextCursor {
-		from {
-			border-right-color: var(--nord4);
-		}
-		to {
-			border-right-color: transparent;
-		}
+	@media only screen and (max-width: 800px) {
+		font-size: 3rem;
 	}
 `;
 
-const Separator = styled.div`
+const HeaderSeparator = styled.div`
 	background-color: var(--nord9);
 	height: 0.5rem;
 	width: 30rem;
 	margin-top: 0;
 	margin-bottom: 1rem;
+
+	@media only screen and (max-width: 1000px) {
+		width: 80%;
+	}
 `;
 
 export const Header = (props: Props) => {
@@ -68,7 +78,7 @@ export const Header = (props: Props) => {
 			<NameContainer>
 				<H1Name>Kyle McKell</H1Name>
 			</NameContainer>
-			<Separator />
+			<HeaderSeparator />
 		</StyledHeader>
 	);
 };

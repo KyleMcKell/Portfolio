@@ -37,11 +37,15 @@ const projects: Project[] = [
 
 const ProjectContainer = styled.div`
 	width: 100%;
-	height: auto;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
+
+	@media only screen and (max-width: 1000px) {
+		flex-direction: column;
+	}
 `;
 
 export const Projects = (props: Props) => {
@@ -51,7 +55,7 @@ export const Projects = (props: Props) => {
 			<Separator />
 			<ProjectContainer>
 				{projects.map((project) => {
-					return <ProjectBox project={project} />;
+					return <ProjectBox project={project} key={project.name} />;
 				})}
 			</ProjectContainer>
 		</>

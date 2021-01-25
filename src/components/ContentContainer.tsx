@@ -8,12 +8,12 @@ const ContentContainerStyling = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 60%;
-	height: 50%;
+	height: 100%;
 	align-items: center;
 	justify-content: space-evenly;
 	background: var(--nord1);
 	margin: 0;
-	padding: 1rem;
+	padding: 3rem;
 	border: 4px solid var(--nord3);
 	border-radius: 20px;
 	box-shadow: 16px 16px 16px var(--nord0);
@@ -24,6 +24,10 @@ const ContentContainerStyling = styled.div`
 
 	@media only screen and (max-width: 800px) {
 		width: 90%;
+	}
+
+	@media only screen and (max-width: 500px) {
+		width: 60%;
 	}
 `;
 

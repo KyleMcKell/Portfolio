@@ -11,7 +11,7 @@ const StyledMain = styled.main`
 		margin-left: calc(5rem + 6px);
 	}
 
-	height: 100vh;
+	height: 100%;
 	color: var(--nord6);
 	font-weight: bold;
 	display: flex;

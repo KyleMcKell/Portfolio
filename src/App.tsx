@@ -29,7 +29,8 @@ const GlobalStyle = createGlobalStyle`
 body {
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
+	height: 100vh;
+	width: 100vw;
 	background-size: 200% 200%;
 	
 	background-image: linear-gradient(
