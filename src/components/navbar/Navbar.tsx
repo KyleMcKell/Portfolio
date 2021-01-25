@@ -40,10 +40,6 @@ const NavBar = styled.nav`
 		right: 0;
 		transition: height 200ms ease-out;
 		margin: 0;
-
-		:hover span {
-			display: inline;
-		}
 	}
 `;
 

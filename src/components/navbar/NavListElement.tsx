@@ -35,6 +35,15 @@ const NavListElement = styled.li`
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+		width: 20%;
+
+		:hover img {
+			display: none;
+		}
+
+		:hover span {
+			display: inline;
+		}
 	}
 `;
 
