@@ -109,16 +109,16 @@ const SubmitButton = styled.button`
 const sendEmail = (e: any) => {
 	e.preventDefault();
 
-	emailjs
-		.sendForm("gmail", "contact-me", e.target, "user_vManlYtWcUHq4SZAbx5T0")
-		.then(
-			(result) => {
-				console.log(result.text);
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
+	// emailjs
+	// 	.sendForm("gmail", "contact-me", e.target, "user_vManlYtWcUHq4SZAbx5T0")
+	// 	.then(
+	// 		(result) => {
+	// 			console.log(result.text);
+	// 		},
+	// 		(error) => {
+	// 			console.log(error.text);
+	// 		}
+	// 	);
 	e.target.reset();
 	alert("email sent!");
 };
