@@ -3,6 +3,7 @@ import H2Text from "components/H2Text";
 import Separator from "components/Separator";
 import { ProjectBox } from "./ProjectBox";
 import pokedex from "images/project-images/pokedex.png";
+import pricingModel from "images/project-images/pricingModel.png";
 import styled from "styled-components";
 
 interface Props {}
@@ -20,6 +21,12 @@ const projects: Project[] = [
 		url: "https://kylemckell.github.io/Pokedex/",
 		description: "Pokedex app made with React and PokeAPI",
 		img: pokedex,
+	},
+	{
+		name: "Pricing Toggle",
+		url: "https://pricing-toggle-model.netlify.app/",
+		description: "Small app example of a toggleable pricing plan",
+		img: pricingModel,
 	},
 ];
 
