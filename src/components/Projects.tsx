@@ -4,6 +4,7 @@ import Separator from "components/Separator";
 import { ProjectBox } from "./ProjectBox";
 import pokedex from "images/project-images/pokedex.png";
 import pricingModel from "images/project-images/pricingModel.png";
+import flashcards from "images/project-images/flashcards.png";
 import styled from "styled-components";
 
 interface Props {}
@@ -21,6 +22,13 @@ const projects: Project[] = [
 		url: "https://kylemckell.github.io/Pokedex/",
 		description: "Pokedex app made with React and PokeAPI",
 		img: pokedex,
+	},
+	{
+		name: "Java Flashcards",
+		url: "https://github.com/KyleMcKell/Flashcards",
+		description:
+			"Java Application which imports, exports, and quizzes on flashcards",
+		img: flashcards,
 	},
 	{
 		name: "Pricing Toggle",
