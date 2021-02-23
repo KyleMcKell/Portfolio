@@ -4,7 +4,7 @@ import Separator from "components/Separator";
 import { ProjectBox } from "./ProjectBox";
 import pokedex from "images/project-images/pokedex.png";
 import pricingModel from "images/project-images/pricingModel.png";
-import flashcards from "images/project-images/flashcards.png";
+import journal from "images/project-images/journal.png";
 import styled from "styled-components";
 
 interface Props {}
@@ -24,16 +24,15 @@ const projects: Project[] = [
 		img: pokedex,
 	},
 	{
-		name: "Java Flashcards",
-		url: "https://github.com/KyleMcKell/Flashcards",
-		description:
-			"Java Application which imports, exports, and quizzes on flashcards",
-		img: flashcards,
+		name: "React Journal",
+		url: "https://wonderful-torvalds-0083a2.netlify.app/",
+		description: "Journal using React that saves your posts to LocalStorage",
+		img: journal,
 	},
 	{
 		name: "Pricing Toggle",
 		url: "https://pricing-toggle-model.netlify.app/",
-		description: "Small app example of a toggleable pricing plan",
+		description: "",
 		img: pricingModel,
 	},
 ];
