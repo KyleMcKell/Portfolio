@@ -1,16 +1,16 @@
-import React from "react";
-import LogoContainer from "components/LogoContainer";
-import css3 from "images/tech-icons/css3.png";
-import git from "images/tech-icons/git.png";
-import html5 from "images/tech-icons/html5.png";
-import js from "images/tech-icons/javascript.png";
-import react from "images/tech-icons/react.png";
-import ts from "images/tech-icons/typescript.png";
-import TechnologyLogo from "components/TechnologyLogo";
-import H2Text from "components/H2Text";
-import Separator from "components/Separator";
-import selfie from "images/me.jpg";
-import styled from "styled-components";
+import React from 'react';
+import LogoContainer from 'components/LogoContainer';
+import css3 from 'images/tech-icons/css3.png';
+import git from 'images/tech-icons/git.png';
+import html5 from 'images/tech-icons/html5.png';
+import js from 'images/tech-icons/javascript.png';
+import react from 'images/tech-icons/react.png';
+import ts from 'images/tech-icons/typescript.png';
+import TechnologyLogo from 'components/TechnologyLogo';
+import H2Text from 'components/H2Text';
+import Separator from 'components/Separator';
+import selfie from 'images/me.jpg';
+import styled from 'styled-components';
 
 interface Props {}
 
@@ -22,27 +22,27 @@ interface TechIcon {
 const techIcons: TechIcon[] = [
 	{
 		src: html5,
-		name: "html5",
+		name: 'html5',
 	},
 	{
 		src: css3,
-		name: "css3",
+		name: 'css3',
 	},
 	{
 		src: js,
-		name: "javascript",
+		name: 'javascript',
 	},
 	{
 		src: ts,
-		name: "typescript",
+		name: 'typescript',
 	},
 	{
 		src: react,
-		name: "react",
+		name: 'react',
 	},
 	{
 		src: git,
-		name: "git",
+		name: 'git',
 	},
 ];
 
@@ -72,7 +72,6 @@ const SelfieStyle = styled.img`
 	width: 15rem;
 	border-radius: 50%;
 	border: 5px solid var(--nord9);
-	filter: grayscale(20%);
 `;
 
 export const About = (props: Props) => {
