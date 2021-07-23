@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import emailjs from "emailjs-com";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import emailjs from 'emailjs-com';
 
 interface Props {}
 
@@ -104,48 +104,57 @@ const SubmitButton = styled.button`
 		margin-top: 0.9rem;
 		margin-bottom: 0.1rem;
 	}
+
+	&:disabled {
+		opacity: 0.3;
+	}
 `;
 
-const sendEmail = (e: any) => {
-	e.preventDefault();
-
-	emailjs
-		.sendForm("gmail", "contact-me", e.target, "user_vManlYtWcUHq4SZAbx5T0")
-		.then(
-			(result) => {
-				console.log(result.text);
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
-	e.target.reset();
-	alert("email sent!");
-};
-
 export const ContactForm = (props: Props) => {
+	const [buttonDisabled, setButtonDisabled] = useState(false);
+
+	const sendEmail = (e: any) => {
+		e.preventDefault();
+
+		emailjs
+			.sendForm('gmail', 'contact-me', e.target, 'user_vManlYtWcUHq4SZAbx5T0')
+			.then(
+				(result) => {
+					console.log(result.text);
+				},
+				(error) => {
+					console.log(error.text);
+				}
+			);
+		e.target.reset();
+		setButtonDisabled(true);
+		alert('email sent!');
+	};
+
 	return (
 		<StyledForm action="submit" onSubmit={sendEmail}>
 			<ContactInfoDiv>
 				<LabelInputDiv>
 					<label htmlFor="name">Name</label>
-					<OneLineInput type="text" name="name" />
+					<OneLineInput type="text" name="name" required />
 				</LabelInputDiv>
 				<LabelInputDiv>
 					<label htmlFor="email">Email</label>
-					<OneLineInput type="email" name="email" />
+					<OneLineInput type="email" name="email" required />
 				</LabelInputDiv>
 			</ContactInfoDiv>
 			<LabelInputDiv>
 				<label htmlFor="message">Subject</label>
-				<SubjectArea name="subject" type="text" />
+				<SubjectArea name="subject" type="text" required />
 			</LabelInputDiv>
 			<LabelInputDiv>
 				<label htmlFor="message">Message</label>
-				<MessageArea name="message" />
+				<MessageArea name="message" required />
 			</LabelInputDiv>
 			<div className="ButtonDiv">
-				<SubmitButton type="submit">Send</SubmitButton>
+				<SubmitButton type="submit" disabled={buttonDisabled}>
+					Send
+				</SubmitButton>
 			</div>
 		</StyledForm>
 	);
