@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import { Navbar } from "components/navbar/Navbar";
-import { Body } from "components/Body";
-import { Header } from "components/Header";
-import { createGlobalStyle } from "styled-components";
+import React, { useState } from 'react';
+import { Navbar } from 'components/navbar/Navbar';
+import { Body } from 'components/Body';
+import { Header } from 'components/Header';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -24,6 +24,7 @@ const GlobalStyle = createGlobalStyle`
 	--nord13: #ebcb8b;
 	--nord14: #a3be8c;
 	--nord15: #b48ead;
+	--nordGreen2: #7da35d;
 }
 
 body {
@@ -53,7 +54,7 @@ body {
 `;
 
 const App: React.FC = () => {
-	const [content, setContent] = useState("about");
+	const [content, setContent] = useState('about');
 
 	return (
 		<>
