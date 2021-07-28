@@ -18,21 +18,21 @@ export type Project = {
 
 const projects: Project[] = [
 	{
-		name: 'Pokedex',
-		url: 'https://kylemckell.github.io/Pokedex/',
-		description: 'Pokedex app made with React and PokeAPI',
-		img: pokedex,
-	},
-	{
 		name: 'Splitter',
 		url: 'https://kylemckell.github.io/Tip-calculator/',
 		description: 'Tip splitting app that uses vanilla HTML, CSS, and JS',
 		img: splitter,
 	},
 	{
+		name: 'Pokedex',
+		url: 'https://kylemckell.github.io/Pokedex/',
+		description: 'Pokedex app made with React and PokeAPI',
+		img: pokedex,
+	},
+	{
 		name: 'Pricing Toggle',
 		url: 'https://pricing-toggle-model.netlify.app/',
-		description: '',
+		description: 'A togglable Pricing Toggle form for an ecommerce site',
 		img: pricingModel,
 	},
 ];
