@@ -24,7 +24,7 @@ const ProjectImg = styled.img`
 	height: 90%;
 	max-height: 15rem;
 	width: 100%;
-	border: 6px solid var(--nord6);
+	border: 6px solid var(--nord15);
 	border-radius: 8px;
 	box-shadow: 7px 8px 5px var(--nord0);
 `;

@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 	--nord13: #ebcb8b;
 	--nord14: #a3be8c;
 	--nord15: #b48ead;
-	--nordGreen2: #7da35d;
+	--nordGreen2: #8dab74;
 }
 
 body {
