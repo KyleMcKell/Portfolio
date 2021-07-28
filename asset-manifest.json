@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.d9aea4aa.chunk.js",
-    "main.js.map": "/static/js/main.d9aea4aa.chunk.js.map",
+    "main.js": "/static/js/main.f7533f8f.chunk.js",
+    "main.js.map": "/static/js/main.f7533f8f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
     "static/js/2.092a0c00.chunk.js": "/static/js/2.092a0c00.chunk.js",
@@ -14,16 +14,16 @@
     "static/media/github.5edef5a2.png": "/static/media/github.5edef5a2.png",
     "static/media/html5.dbc3baa7.png": "/static/media/html5.dbc3baa7.png",
     "static/media/javascript.75220e22.png": "/static/media/javascript.75220e22.png",
-    "static/media/journal.505a5c23.png": "/static/media/journal.505a5c23.png",
     "static/media/me.a7a8ba6f.jpg": "/static/media/me.a7a8ba6f.jpg",
     "static/media/pokedex.8f408b13.png": "/static/media/pokedex.8f408b13.png",
     "static/media/pricingModel.85d3f747.png": "/static/media/pricingModel.85d3f747.png",
     "static/media/react.e67df61c.png": "/static/media/react.e67df61c.png",
+    "static/media/splitter.76764db2.png": "/static/media/splitter.76764db2.png",
     "static/media/typescript.b245770f.png": "/static/media/typescript.b245770f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/js/2.092a0c00.chunk.js",
-    "static/js/main.d9aea4aa.chunk.js"
+    "static/js/main.f7533f8f.chunk.js"
   ]
 }
