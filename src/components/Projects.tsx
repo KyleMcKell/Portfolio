@@ -1,11 +1,11 @@
-import React from "react";
-import H2Text from "components/H2Text";
-import Separator from "components/Separator";
-import { ProjectBox } from "./ProjectBox";
-import pokedex from "images/project-images/pokedex.png";
-import pricingModel from "images/project-images/pricingModel.png";
-import journal from "images/project-images/journal.png";
-import styled from "styled-components";
+import React from 'react';
+import H2Text from 'components/H2Text';
+import Separator from 'components/Separator';
+import { ProjectBox } from './ProjectBox';
+import pokedex from 'images/project-images/pokedex.png';
+import pricingModel from 'images/project-images/pricingModel.png';
+import splitter from 'images/project-images/splitter.png';
+import styled from 'styled-components';
 
 interface Props {}
 
@@ -18,21 +18,21 @@ export type Project = {
 
 const projects: Project[] = [
 	{
-		name: "Pokedex",
-		url: "https://kylemckell.github.io/Pokedex/",
-		description: "Pokedex app made with React and PokeAPI",
+		name: 'Pokedex',
+		url: 'https://kylemckell.github.io/Pokedex/',
+		description: 'Pokedex app made with React and PokeAPI',
 		img: pokedex,
 	},
 	{
-		name: "React Journal",
-		url: "https://wonderful-torvalds-0083a2.netlify.app/",
-		description: "Journal using React that saves your posts to LocalStorage",
-		img: journal,
+		name: 'Splitter',
+		url: 'https://kylemckell.github.io/Tip-calculator/',
+		description: 'Tip splitting app that uses vanilla HTML, CSS, and JS',
+		img: splitter,
 	},
 	{
-		name: "Pricing Toggle",
-		url: "https://pricing-toggle-model.netlify.app/",
-		description: "",
+		name: 'Pricing Toggle',
+		url: 'https://pricing-toggle-model.netlify.app/',
+		description: '',
 		img: pricingModel,
 	},
 ];
