@@ -3,7 +3,7 @@ import H2Text from 'components/H2Text';
 import Separator from 'components/Separator';
 import { ProjectBox } from './ProjectBox';
 import pokedex from 'images/project-images/pokedex.png';
-import pricingModel from 'images/project-images/pricingModel.png';
+import aeropressTracker from 'images/project-images/aeropresstracker.png';
 import splitter from 'images/project-images/splitter.png';
 import styled from 'styled-components';
 
@@ -24,16 +24,16 @@ const projects: Project[] = [
 		img: splitter,
 	},
 	{
+		name: 'Aeropress Tracker',
+		url: 'https://aeropresstracker.com/',
+		description: 'An app to track aeropress brews to make the perfect one!',
+		img: aeropressTracker,
+	},
+	{
 		name: 'Pokedex',
 		url: 'https://kylemckell.github.io/Pokedex/',
 		description: 'Pokedex app made with React and PokeAPI',
 		img: pokedex,
-	},
-	{
-		name: 'Pricing Toggle',
-		url: 'https://pricing-toggle-model.netlify.app/',
-		description: 'A togglable Pricing Toggle form for an ecommerce site',
-		img: pricingModel,
 	},
 ];
 
