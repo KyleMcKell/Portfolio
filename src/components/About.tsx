@@ -17,8 +17,8 @@ export const About = (props: Props) => {
           </span>
           <span>
             I have a passion for teaching others, and if you're interested, you
-            can follow along on my Twitter!{' '}
-            <Link href="https://twitter.com/KyleMcKell">@KyleMcKell</Link>
+            can follow along on my{' '}
+            <Link href="https://twitter.com/KyleMcKell">Twitter</Link>!
           </span>
           <span>
             While you're at it, you can check out my{' '}
@@ -88,10 +88,12 @@ const AboutMeText = styled.p`
 
 const Link = styled.a`
   color: var(--nord8point5);
+  text-decoration: none;
 
   :hover {
     cursor: pointer;
     color: var(--nord8);
+    text-decoration: underline;
   }
 `;
 

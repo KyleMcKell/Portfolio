@@ -8,18 +8,18 @@ interface Props {
 
 export const ProjectBox: React.FC<Props> = ({ project }) => {
   const handleClick = (url: string) => {
-    return window.open(`${url}`, '_blank');
+    return window.open(`${url}`, '_self');
   };
 
   return (
     <ProjectContainer onClick={() => handleClick(project.url)}>
       <ProjectImg src={project.img} alt={project.name} />
-      <h3>{project.name}</h3>
+      <ProjectName>{project.name}</ProjectName>
     </ProjectContainer>
   );
 };
 
-const ProjectContainer = styled.div`
+const ProjectContainer = styled.button`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +28,9 @@ const ProjectContainer = styled.div`
   height: 100%;
   width: 100%;
   max-width: 22rem;
+
+  background: none;
+  border: none;
 
   :hover {
     cursor: pointer;
@@ -40,4 +43,10 @@ const ProjectImg = styled.img`
   object-fit: cover;
   border-radius: 8px;
   aspect-ratio: 1/1;
+`;
+
+const ProjectName = styled.h3`
+  color: var(--nord6);
+  font-size: 1.2rem;
+  font-weight: 700;
 `;

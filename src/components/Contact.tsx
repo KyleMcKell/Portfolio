@@ -110,8 +110,8 @@ const Message = styled.div`
 `;
 
 const OneLineInput = styled.input`
-  padding: 0.5rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   line-height: 1.5;
   border: none;
   border-radius: 5px;
@@ -149,7 +149,7 @@ const SubmitButton = styled.button`
   place-self: end;
   display: grid;
   place-content: center;
-  max-height: 45px;
+  max-height: 40px;
   border: none;
   padding: 1rem 3rem;
   border-radius: 4px;
