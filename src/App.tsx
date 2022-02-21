@@ -6,7 +6,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 :root {
-	font-family: "Fira Code", monospace, Arial, sans-serif;
+	font-family: "Rubik", monospace, Arial, sans-serif;
 	font-size: 16px;
 	--nord0: #2e3440;
 	--nord1: #3b4252;
@@ -25,6 +25,7 @@ const GlobalStyle = createGlobalStyle`
 	--nord14: #a3be8c;
 	--nord15: #b48ead;
 	--nordGreen2: #8dab74;
+	--nord3point5: #53617a;
 }
 
 body {
@@ -54,16 +55,16 @@ body {
 `;
 
 const App: React.FC = () => {
-	const [content, setContent] = useState('about');
+  const [content, setContent] = useState('about');
 
-	return (
-		<>
-			<GlobalStyle />
-			<Navbar setContent={setContent} />
-			<Header />
-			<Body content={content} />
-		</>
-	);
+  return (
+    <>
+      <GlobalStyle />
+      <Navbar setContent={setContent} />
+      <Header />
+      <Body content={content} />
+    </>
+  );
 };
 
 export default App;
