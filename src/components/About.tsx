@@ -11,24 +11,27 @@ export const About = (props: Props) => {
       <TextDiv>
         <AboutMeText>
           <span>
-            I’m a self-taught front-end developer ADHDing my way through the
-            world of web development.
+            Hello! I’m a self-taught front-end developer ADHDing my way through
+            the world of web development.
           </span>
           <span>
-            I have a passion for teaching others, you can follow along on my
-            Twitter!{' '}
+            I have a passion for teaching others, and if you're interested, you
+            can follow along on my Twitter!{' '}
             <Link href="https://twitter.com/KyleMcKell">@KyleMcKell</Link>
           </span>
           <span>
             My current tech stack includes{' '}
             <Link href="https://reactjs.org/">React</Link>,{' '}
             <Link href="https://www.typescriptlang.org/">TypeScript</Link>, and
-            a UI framework. My favorites are{' '}
+            a UI framework. Currently my favorites are{' '}
             <Link href="https://nextjs.org/">Next.js</Link>,{' '}
             <Link href="https://remix.run/">Remix</Link>, and{' '}
-            <Link href="https://kit.svelte.dev/">SvelteKit</Link>. I also LOVE
-            writing <SnazzyText> NIFTY </SnazzyText>CSS.
+            <Link href="https://kit.svelte.dev/">SvelteKit</Link>.
           </span>
+          <span>
+            I also LOVE writing <SnazzyText> NIFTY </SnazzyText>CSS.
+          </span>
+          <span>Let's chat sometime 🦆</span>
         </AboutMeText>
       </TextDiv>
       <SelfieStyle src={selfie} alt="picture of me" />
