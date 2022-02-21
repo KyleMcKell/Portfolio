@@ -21,6 +21,10 @@ export const About = (props: Props) => {
             <Link href="https://twitter.com/KyleMcKell">@KyleMcKell</Link>
           </span>
           <span>
+            While you're at it, you can check out my{' '}
+            <Link href="https://github.com/KyleMcKell">GitHub</Link>!
+          </span>
+          <span>
             My current tech stack includes{' '}
             <Link href="https://reactjs.org/">React</Link>,{' '}
             <Link href="https://www.typescriptlang.org/">TypeScript</Link>, and
