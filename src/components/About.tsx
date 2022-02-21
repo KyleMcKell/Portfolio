@@ -47,7 +47,7 @@ const AboutSelfDiv = styled.div`
   align-items: center;
   background-color: var(--nord1);
   width: 100%;
-  padding: 2rem;
+  padding: 4rem 2rem;
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;

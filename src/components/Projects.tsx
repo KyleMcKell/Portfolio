@@ -49,7 +49,7 @@ export const Projects = (props: Props) => {
 };
 
 const Wrapper = styled.section`
-  padding: 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

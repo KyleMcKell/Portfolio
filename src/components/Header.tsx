@@ -12,8 +12,7 @@ export const Header = (props: Props) => {
 };
 
 const Wrapper = styled.header`
-  padding: 2rem;
-  padding-top: 4rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
