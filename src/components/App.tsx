@@ -36,11 +36,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-	padding: 0;
-	margin: 0;
 	background: var(--nord0);
-	display: flex;
-	justify-content: center;
 }
 `;
 

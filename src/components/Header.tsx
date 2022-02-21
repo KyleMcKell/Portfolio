@@ -6,19 +6,18 @@ interface Props {}
 export const Header = (props: Props) => {
   return (
     <Wrapper>
-      <Name>Kyle McKell</Name>
+      <Name> Kyle McKell </Name>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.header`
   padding: 2rem;
-  width: 90%;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 8px solid var(--nord9);
 `;
 
 const Name = styled.h1`

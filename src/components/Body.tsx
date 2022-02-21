@@ -20,7 +20,7 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin: 1rem;
   gap: 8rem;
 
