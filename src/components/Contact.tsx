@@ -127,6 +127,7 @@ const MessageArea = styled.textarea`
   font-size: 1.2rem;
   line-height: 1.5;
   width: 100%;
+  min-height: calc(100% - 1.5rem);
   border: none;
   font-family: var(--font-base);
   border-radius: 5px;
