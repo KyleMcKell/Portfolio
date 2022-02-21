@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import crow from 'images/nav-icons/crow.png';
 import feather from 'images/nav-icons/feather.png';
 import code from 'images/nav-icons/code.png';
-import mountain from 'images/nav-icons/mountain.png';
 import github from 'images/nav-icons/github.png';
 
 interface Props {
@@ -67,7 +66,7 @@ export const Navbar = (props: Props) => {
 };
 
 const NavBar = styled.nav`
-  background: var(--nord0);
+  background: var(--nord1);
   z-index: 100;
 
   @media (min-width: 1000px) {

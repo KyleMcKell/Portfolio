@@ -39,7 +39,6 @@ export const Projects = (props: Props) => {
   return (
     <>
       <H2Text>My Projects</H2Text>
-      <Separator />
       <ProjectContainer>
         {projects.map((project) => {
           return <ProjectBox project={project} key={project.name} />;
@@ -50,18 +49,15 @@ export const Projects = (props: Props) => {
 };
 
 const ProjectContainer = styled.div`
-  width: 100%;
+  padding: 1rem;
+  width: fit-content;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: clamp(8px, 8px + 10vw, 32px);
   flex-wrap: wrap;
-
-  @media (max-width: 1000px) {
-    flex-direction: column;
-  }
 `;
 
 const H2Text = styled.h2`
@@ -70,11 +66,4 @@ const H2Text = styled.h2`
   margin: 1.5rem 3rem;
   font-size: 1.5rem;
   padding-top: 1rem;
-`;
-
-const Separator = styled.div`
-  background-color: var(--nord5);
-  height: 0.5rem;
-  width: 70%;
-  margin: 2rem;
 `;

@@ -21,9 +21,10 @@ const StyledHeader = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: calc(5rem + 6px);
 
-  @media only screen and (min-width: 1000px) {
-    margin-left: calc(5rem + 6px);
+  @media (max-width: 1000px) {
+    margin-left: revert;
   }
 `;
 
@@ -42,7 +43,8 @@ const H1Name = styled.h1`
   white-space: nowrap;
   overflow: hidden;
   border-right: 6px solid transparent;
-  @media only screen and (max-width: 1000px) {
+
+  @media (max-width: 1000px) {
     font-size: 3rem;
   }
 `;
@@ -54,7 +56,7 @@ const HeaderSeparator = styled.div`
   margin-top: 0;
   margin-bottom: 1rem;
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     width: 80%;
   }
 `;

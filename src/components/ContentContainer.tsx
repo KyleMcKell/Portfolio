@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import React from 'react';
 import { About } from 'components/About';
-import { Contact } from 'components/Contact';
 import { Projects } from 'components/Projects';
+import { Contact } from './Contact';
 
 interface Props {
   content: string;
@@ -26,16 +26,6 @@ export const ContentContainer: React.FC<Props> = (props: Props) => {
 };
 
 const ContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: var(--nord1);
-  padding: 3rem;
-  border: 4px solid var(--nord3);
-  border-radius: 20px;
-  filter: drop-shadow(0 4px 3px var(--nord0))
-    drop-shadow(0 2px 2px var(--nord0));
-
   @media (max-width: 1000px) {
     width: 80%;
     padding: 0rem;

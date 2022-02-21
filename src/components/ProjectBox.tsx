@@ -20,14 +20,12 @@ export const ProjectBox: React.FC<Props> = ({ project }) => {
 };
 
 const ProjectContainer = styled.div`
-  height: 20rem;
   width: 15rem;
-  max-height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0.5rem;
+  gap: 1rem;
 
   :hover {
     cursor: pointer;
@@ -36,10 +34,7 @@ const ProjectContainer = styled.div`
 
 const ProjectImg = styled.img`
   width: 100%;
-  height: 100%;
   border: 6px solid var(--nord3point5);
   object-fit: cover;
   border-radius: 8px;
-  filter: drop-shadow(0 2px 4px var(--nord0))
-    drop-shadow(0 1px 3px var(--nord0));
 `;

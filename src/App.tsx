@@ -6,8 +6,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 :root {
-	font-family: "Rubik", monospace, Arial, sans-serif;
+	font-family: var(--font-base), monospace, Arial, sans-serif;
 	font-size: 16px;
+	--font-base: "Rubik";
+	--font-snazzy: "Sriracha";
 	--nord0: #2e3440;
 	--nord1: #3b4252;
 	--nord2: #434c5e;
@@ -23,9 +25,15 @@ const GlobalStyle = createGlobalStyle`
 	--nord12: #d08770;
 	--nord13: #ebcb8b;
 	--nord14: #a3be8c;
-	--nord15: #b48ead;
+	--nord15: #fd83e5;
 	--nordGreen2: #8dab74;
 	--nord3point5: #53617a;
+	--nord8point5: #9ed5e4;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
 }
 
 body {
@@ -33,12 +41,13 @@ body {
 	margin: 0;
 	background-size: 400% 400%;
 	
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		-45deg,
 		var(--nord3),
 		var(--nord1)
 	);
-	animation: gradient 30s ease infinite
+	animation: gradient 30s ease infinite */
+	background: var(--nord0);
 }
 
 @keyframes gradient {

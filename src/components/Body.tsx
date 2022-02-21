@@ -7,16 +7,19 @@ interface Props {
 }
 
 const StyledMain = styled.main`
-  margin-left: calc(5rem + 6px);
-  height: 100%;
   color: var(--nord6);
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: calc(5rem + 6px + 1rem);
 
   @media (max-width: 1000px) {
     margin-left: revert;
+    display: flex;
+    align-items: center;
   }
 `;
 

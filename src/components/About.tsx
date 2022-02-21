@@ -1,67 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import css3 from 'images/tech-icons/css3.png';
-import html5 from 'images/tech-icons/html5.png';
-import js from 'images/tech-icons/javascript.png';
-import react from 'images/tech-icons/react.png';
-import ts from 'images/tech-icons/typescript.png';
 import selfie from 'images/me.jpg';
 
 interface Props {}
 
-interface TechIcon {
-  src: string;
-  name: string;
-}
-
-const techIcons: TechIcon[] = [
-  {
-    src: html5,
-    name: 'html5',
-  },
-  {
-    src: css3,
-    name: 'css3',
-  },
-  {
-    src: js,
-    name: 'javascript',
-  },
-  {
-    src: ts,
-    name: 'typescript',
-  },
-  {
-    src: react,
-    name: 'react',
-  },
-];
-
 export const About = (props: Props) => {
   return (
     <>
-      <Separator />
       <AboutSelfDiv>
         <TextDiv>
           <AboutMeText>
-            <div>
-              I’m a self-taught front end software developer ADHDing my way
-              through the world of web development.
-            </div>
-            <br />
-            <div>
+            <span>
+              I’m a self-taught front-end developer ADHDing my way through the
+              world of web development.
+            </span>
+            <span>
               I have a passion for teaching others, you can follow along on my
               Twitter!{' '}
-              <SocialLink href="https://twitter.com/KyleMcKell">
-                @KyleMcKell
-              </SocialLink>
-            </div>
+              <Link href="https://twitter.com/KyleMcKell">@KyleMcKell</Link>
+            </span>
+            <span>
+              My current tech stack includes{' '}
+              <Link href="https://reactjs.org/">React</Link>,{' '}
+              <Link href="https://www.typescriptlang.org/">TypeScript</Link>,
+              and a UI framework. My favorites are{' '}
+              <Link href="https://nextjs.org/">Next.js</Link>,{' '}
+              <Link href="https://remix.run/">Remix</Link>, and{' '}
+              <Link href="https://kit.svelte.dev/">SvelteKit</Link>. I also LOVE
+              writing <SnazzyText> NIFTY </SnazzyText>CSS.
+            </span>
           </AboutMeText>
         </TextDiv>
         <SelfieStyle src={selfie} alt="picture of me" />
       </AboutSelfDiv>
-      <Separator />
     </>
   );
 };
@@ -94,8 +66,6 @@ const SelfieStyle = styled.img`
   min-width: 15rem;
   border-radius: 50%;
   border: 5px solid var(--nord3point5);
-  filter: drop-shadow(0 4px 3px var(--nord0))
-    drop-shadow(0 2px 2px var(--nord1));
 `;
 
 const AboutMeText = styled.p`
@@ -104,10 +74,13 @@ const AboutMeText = styled.p`
   line-height: 1.7;
   font-size: 1.2rem;
   padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
-const SocialLink = styled.a`
-  color: inherit;
+const Link = styled.a`
+  color: var(--nord8point5);
 
   :hover {
     cursor: pointer;
@@ -115,9 +88,7 @@ const SocialLink = styled.a`
   }
 `;
 
-const Separator = styled.div`
-  background-color: var(--nord5);
-  height: 0.5rem;
-  width: 70%;
-  margin: 2rem;
+const SnazzyText = styled.span`
+  font-family: var(--font-snazzy);
+  color: var(--nord15);
 `;
