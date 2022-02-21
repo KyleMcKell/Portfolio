@@ -18,6 +18,7 @@ const Wrapper = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 `;
 
 const Name = styled.h1`

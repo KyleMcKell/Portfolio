@@ -17,6 +17,4 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0rem 8rem;
-  gap: 8rem;
 `;

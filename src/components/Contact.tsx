@@ -55,13 +55,6 @@ export const Contact = (props: Props) => {
   );
 };
 
-const Heading = styled.h2`
-  color: var(--nord6);
-  text-align: center;
-  font-size: 2rem;
-  grid-area: heading;
-`;
-
 const Wrapper = styled.form`
   flex: 1;
   display: grid;
@@ -83,6 +76,13 @@ const Wrapper = styled.form`
       'message'
       'button';
   }
+`;
+
+const Heading = styled.h2`
+  color: var(--nord6);
+  font-size: 2rem;
+  grid-area: heading;
+  text-align: center;
 `;
 
 const Field = styled.div`

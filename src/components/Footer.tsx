@@ -15,7 +15,7 @@ export const Footer = (props: Props) => {
 
 const Wrapper = styled.footer`
   background-color: var(--nord1);
-  padding: 4rem;
+  padding: 2rem;
   display: flex;
 `;
 

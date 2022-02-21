@@ -44,7 +44,7 @@ const AboutSelfDiv = styled.div`
   align-items: center;
   background-color: var(--nord1);
   width: 100%;
-  padding: 4rem;
+  padding: 2rem;
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
@@ -73,7 +73,6 @@ const AboutMeText = styled.p`
   font-weight: 450;
   line-height: 1.7;
   font-size: 1.2rem;
-  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;

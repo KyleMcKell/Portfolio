@@ -26,7 +26,8 @@ const ProjectContainer = styled.div`
   justify-content: center;
   gap: 1rem;
   height: 100%;
-  max-width: 20rem;
+  width: 100%;
+  max-width: 22rem;
 
   :hover {
     cursor: pointer;
