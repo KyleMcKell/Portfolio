@@ -8,7 +8,6 @@ export const Body = () => {
     <Main>
       <About />
       <Projects />
-      <Contact />
     </Main>
   );
 };
@@ -20,7 +19,7 @@ const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 8rem;
   margin: 1rem;
   gap: 8rem;
 

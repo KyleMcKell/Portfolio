@@ -1,6 +1,7 @@
 import React from 'react';
 import { Body } from 'components/Body';
 import { Header } from 'components/Header';
+import { Footer } from 'components/Footer';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
@@ -46,6 +47,7 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Header />
       <Body />
+      <Footer />
     </>
   );
 };
