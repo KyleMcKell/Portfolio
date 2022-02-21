@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: center;
 
-  @media only screen and (orientation: landscape) {
+  @media only screen and (min-width: 1000px) {
     margin-left: calc(5rem + 6px);
   }
 `;
@@ -31,7 +31,7 @@ const H1Name = styled.h1`
   white-space: nowrap;
   overflow: hidden;
   border-right: 6px solid transparent;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     font-size: 3rem;
   }
 `;

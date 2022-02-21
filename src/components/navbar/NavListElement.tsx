@@ -11,7 +11,7 @@ const NavListElement = styled.li`
     background-color: var(--nord4);
   }
 
-  @media only screen and (orientation: landscape) and (min-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     white-space: nowrap;
     :first-child {
       font-size: 2rem;
@@ -30,25 +30,7 @@ const NavListElement = styled.li`
     }
   }
 
-  @media only screen and (orientation: portrait) {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.8rem;
-
-    :hover img {
-      display: none;
-    }
-
-    :hover span {
-      display: inline;
-    }
-  }
-
-  @media only screen and (orientation: landscape) and (max-width: 1000px) {
+  @media only screen and (max-width: 1000px) {
     height: 100%;
     text-align: center;
     font-size: 0.8rem;

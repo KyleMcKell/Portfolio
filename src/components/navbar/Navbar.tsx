@@ -4,7 +4,6 @@ import NavListElement from 'components/navbar/NavListElement';
 import NavBarNav from 'components/navbar/NavbarNav';
 import NavLink from 'components/navbar/NavLink';
 import NavListImg from 'components/navbar/NavListImg';
-import NavLinkText from 'components/navbar/NavLinkText';
 import crow from 'images/nav-icons/crow.png';
 import feather from 'images/nav-icons/feather.png';
 import code from 'images/nav-icons/code.png';
@@ -19,7 +18,7 @@ const NavBar = styled.nav`
   background: var(--nord0);
   z-index: 100;
 
-  @media only screen and (orientation: landscape) and (min-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     width: 5rem;
     height: 100vh;
     position: fixed;
@@ -33,21 +32,10 @@ const NavBar = styled.nav`
       display: inline;
     }
   }
+`;
 
-  @media only screen and (orientation: landscape) and (max-width: 1000px) {
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-  }
-
-  @media only screen and (orientation: portrait) {
-    height: 10vh;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    transition: height 200ms ease-out;
-    margin: 0;
-  }
+const NavListText = styled.span`
+  display: none;
 `;
 
 interface navbarElement {
@@ -101,7 +89,7 @@ export const Navbar = (props: Props) => {
             <NavListElement key={`${element.text}element`}>
               <NavLink onClick={() => handleClick(element.src)}>
                 <NavListImg src={`${element.img}`} alt={`${element.text}`} />
-                <NavLinkText>{element.text}</NavLinkText>
+                <NavListText>{element.text}</NavListText>
               </NavLink>
             </NavListElement>
           );

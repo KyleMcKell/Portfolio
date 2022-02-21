@@ -1,7 +1,6 @@
 import React from 'react';
 import LogoContainer from 'components/LogoContainer';
 import css3 from 'images/tech-icons/css3.png';
-import git from 'images/tech-icons/git.png';
 import html5 from 'images/tech-icons/html5.png';
 import js from 'images/tech-icons/javascript.png';
 import react from 'images/tech-icons/react.png';
@@ -39,10 +38,6 @@ const techIcons: TechIcon[] = [
   {
     src: react,
     name: 'react',
-  },
-  {
-    src: git,
-    name: 'git',
   },
 ];
 

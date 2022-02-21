@@ -20,12 +20,8 @@ const ContentContainerStyling = styled.div`
   filter: drop-shadow(0 4px 3px var(--nord0))
     drop-shadow(0 2px 2px var(--nord0));
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1000px) {
     width: 80%;
-  }
-
-  @media only screen and (max-width: 800px) {
-    max-width: 100%;
     padding: 0rem;
     padding-bottom: 1rem;
   }
