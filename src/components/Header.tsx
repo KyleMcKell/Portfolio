@@ -12,12 +12,11 @@ export const Header = (props: Props) => {
 };
 
 const Wrapper = styled.header`
-  padding: 4rem 2rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
 `;
 
 const Name = styled.h1`

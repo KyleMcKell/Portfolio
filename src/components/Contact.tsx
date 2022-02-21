@@ -83,6 +83,10 @@ const Heading = styled.h2`
   font-size: 2rem;
   grid-area: heading;
   text-align: center;
+
+  @media (max-width: 466px) {
+    text-align: revert;
+  }
 `;
 
 const Field = styled.div`

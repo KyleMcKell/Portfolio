@@ -49,7 +49,7 @@ export const Projects = (props: Props) => {
 };
 
 const Wrapper = styled.section`
-  padding: 4rem 2rem;
+  padding: 4rem 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -59,6 +59,10 @@ const Heading = styled.h2`
   color: var(--nord6);
   text-align: center;
   font-size: 2rem;
+
+  @media (max-width: 466px) {
+    text-align: revert;
+  }
 `;
 
 const ProjectsWrapper = styled.div`
