@@ -49,6 +49,7 @@ export const Projects = (props: Props) => {
 };
 
 const Wrapper = styled.section`
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -67,6 +68,7 @@ const ProjectsWrapper = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  gap: clamp(8px, 8px + 10vw, 32px);
+  column-gap: clamp(24px, 8px + 4vw, 72px);
+  row-gap: 24px;
   flex-wrap: wrap;
 `;

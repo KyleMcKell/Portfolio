@@ -8,6 +8,7 @@ export const Footer = (props: Props) => {
   return (
     <Wrapper>
       <Contact />
+      {/* <Socials>hi</Socials> */}
     </Wrapper>
   );
 };
@@ -15,5 +16,9 @@ export const Footer = (props: Props) => {
 const Wrapper = styled.footer`
   background-color: var(--nord1);
   padding: 4rem;
-  color: var(--nord6);
+  display: flex;
+`;
+
+const Socials = styled.section`
+  flex: 1;
 `;

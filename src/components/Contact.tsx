@@ -28,142 +28,137 @@ export const Contact = (props: Props) => {
   return (
     <Wrapper action="submit" onSubmit={sendEmail}>
       <Heading>Contact Me!</Heading>
-      <div>
-        <ContactInfoDiv>
-          <LabelInputDiv>
-            <label htmlFor="name">Name</label>
-            <OneLineInput type="text" name="name" required />
-          </LabelInputDiv>
-          <LabelInputDiv>
-            <label htmlFor="email">Email</label>
-            <OneLineInput type="email" name="email" required />
-          </LabelInputDiv>
-        </ContactInfoDiv>
-        <LabelInputDiv>
-          <label htmlFor="message">Subject</label>
-          <SubjectArea name="subject" type="text" required />
-        </LabelInputDiv>
-        <LabelInputDiv>
-          <label htmlFor="message">Message</label>
-          <MessageArea name="message" required />
-        </LabelInputDiv>
-      </div>
-      <div className="ButtonDiv">
-        <SubmitButton type="submit" disabled={buttonDisabled}>
-          Send
-        </SubmitButton>
-      </div>
+      <NameField>
+        <label htmlFor="name">Name</label>
+        <OneLineInput type="text" name="name" required />
+      </NameField>
+
+      <EmailField>
+        <label htmlFor="email">Email</label>
+        <OneLineInput type="email" name="email" required />
+      </EmailField>
+
+      <SubjectField>
+        <label htmlFor="message">Subject</label>
+        <OneLineInput name="subject" type="text" required />
+      </SubjectField>
+
+      <Message>
+        <label htmlFor="message">Message</label>
+        <MessageArea name="message" required />
+      </Message>
+
+      <SubmitButton type="submit" disabled={buttonDisabled}>
+        Send
+      </SubmitButton>
     </Wrapper>
   );
 };
-
-const Wrapper = styled.form`
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-`;
 
 const Heading = styled.h2`
   color: var(--nord6);
   text-align: center;
   font-size: 2rem;
+  grid-area: heading;
 `;
 
-const ContactInfoDiv = styled.div`
-  display: flex;
+const Wrapper = styled.form`
+  flex: 1;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr minmax(500px, 3fr);
+  grid-template-areas:
+    'heading heading'
+    'name message'
+    'email message'
+    'subject button';
 
   @media (max-width: 1000px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'heading'
+      'name'
+      'email'
+      'subject'
+      'message'
+      'button';
   }
 `;
 
-const LabelInputDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem 2rem;
+const Field = styled.div`
+  display: grid;
+  max-height: 6rem;
+`;
+
+const NameField = styled(Field)`
+  grid-area: name;
+`;
+const EmailField = styled(Field)`
+  grid-area: email;
+`;
+const SubjectField = styled(Field)`
+  grid-area: subject;
+`;
+const Message = styled.div`
+  grid-area: message;
+  line-height: 1.5;
 `;
 
 const OneLineInput = styled.input`
-  height: 2rem;
-  padding: 0.2em 1em;
-  width: 14.5em;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
   border: none;
   border-radius: 5px;
   background-color: var(--nord3);
   color: var(--nord6);
   margin-top: 0.3rem;
-  font-size: 0.8rem;
   font-family: inherit;
 
   :focus {
     background-color: var(--nord4);
     color: var(--nord0);
-  }
-`;
-
-const SubjectArea = styled(OneLineInput)`
-  width: 36em;
-
-  @media (max-width: 1000px) {
-    width: 14.5em;
   }
 `;
 
 const MessageArea = styled.textarea`
-  width: 36em;
-  height: 60px;
-  padding: 1em;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  white-space: normal;
+  display: grid;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  width: 100%;
   border: none;
-  font-family: inherit;
+  font-family: var(--font-base);
   border-radius: 5px;
   background-color: var(--nord3);
   color: var(--nord6);
-  margin-top: 0.3rem;
-  font-size: 0.8rem;
-  max-width: 70em;
-  max-height: 15em;
 
   :focus {
     background-color: var(--nord4);
     color: var(--nord0);
   }
-
-  @media (max-width: 1000px) {
-    width: 14.5em;
-    max-width: 20em;
-    max-height: 50em;
-  }
 `;
 
 const SubmitButton = styled.button`
+  place-self: end;
   border: none;
-  background: none;
-  width: 11rem;
-  height: 3rem;
-  background-color: var(--nord3point5);
+  padding: 1rem 3rem;
   border-radius: 4px;
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 2px 2px 1px var(--nord0);
-  margin-top: 0.8rem;
-  margin-bottom: 0.2rem;
   color: var(--nord4);
+  background-color: var(--nord3point5);
+  transition: background-color 0.5s ease;
 
   :hover {
     cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    background-color: var(--nord3);
   }
 
   :active {
-    margin-top: 0.9rem;
-    margin-bottom: 0.1rem;
+    background-color: var(--nord2);
   }
 
   &:disabled {

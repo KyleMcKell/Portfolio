@@ -38,6 +38,7 @@ const GlobalStyle = createGlobalStyle`
 
 body {
 	background: var(--nord0);
+	color: var(--nord6);
 }
 `;
 
