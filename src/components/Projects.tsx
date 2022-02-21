@@ -16,16 +16,16 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    name: 'Splitter',
-    url: 'https://kylemckell.github.io/Tip-calculator/',
-    description: 'Tip splitting app that uses vanilla HTML, CSS, and JS',
-    img: splitter,
-  },
-  {
     name: 'Aeropress Tracker',
     url: 'https://aeropresstracker.com/',
     description: 'An app to track aeropress brews to make the perfect one!',
     img: aeropressTracker,
+  },
+  {
+    name: 'Splitter',
+    url: 'https://kylemckell.github.io/Tip-calculator/',
+    description: 'Tip splitting app that uses vanilla HTML, CSS, and JS',
+    img: splitter,
   },
   {
     name: 'Pokedex',
@@ -56,8 +56,10 @@ const ProjectContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
@@ -67,6 +69,7 @@ const H2Text = styled.h2`
   text-align: center;
   margin: 1.5rem 3rem;
   font-size: 1.5rem;
+  padding-top: 1rem;
 `;
 
 const Separator = styled.div`

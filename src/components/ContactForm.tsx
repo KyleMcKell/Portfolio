@@ -14,7 +14,7 @@ const StyledForm = styled.form`
 const ContactInfoDiv = styled.div`
   display: flex;
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: column;
   }
 `;
@@ -48,7 +48,7 @@ const OneLineInput = styled.input`
 const SubjectArea = styled(OneLineInput)`
   width: 36em;
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     width: 14.5em;
   }
 `;
@@ -78,7 +78,7 @@ const MessageArea = styled.textarea`
     color: var(--nord0);
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     width: 14.5em;
     max-width: 20em;
     max-height: 50em;

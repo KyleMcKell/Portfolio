@@ -5,16 +5,16 @@ interface Props {}
 
 export const Header = (props: Props) => {
   return (
-    <HeaderContainer>
+    <StyledHeader>
       <NameContainer>
         <H1Name>Kyle McKell</H1Name>
       </NameContainer>
       <HeaderSeparator />
-    </HeaderContainer>
+    </StyledHeader>
   );
 };
 
-const HeaderContainer = styled.header`
+const StyledHeader = styled.header`
   height: 200px;
   width: auto;
   display: flex;

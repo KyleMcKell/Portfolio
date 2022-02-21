@@ -23,11 +23,6 @@ const navbarElements: navbarElement[] = [
     src: '',
   },
   {
-    img: mountain,
-    text: 'About',
-    src: 'about',
-  },
-  {
     img: code,
     text: 'Projects',
     src: 'projects',
@@ -75,7 +70,7 @@ const NavBar = styled.nav`
   background: var(--nord0);
   z-index: 100;
 
-  @media only screen and (min-width: 1000px) {
+  @media (min-width: 1000px) {
     width: 5rem;
     height: 100vh;
     position: fixed;
@@ -98,12 +93,9 @@ const NavBarNav = styled.ul`
   margin: 0;
   height: 100%;
   align-items: center;
+  flex-direction: column;
 
-  @media only screen and (min-width: 1000px) {
-    flex-direction: column;
-  }
-
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     flex-direction: row;
     justify-content: center;
   }
@@ -116,6 +108,7 @@ const NavLink = styled.a`
   text-decoration: none;
   height: 5rem;
   transition: color 300ms linear;
+  justify-content: left;
 
   :hover {
     color: var(--nord1);
@@ -126,11 +119,7 @@ const NavLink = styled.a`
     filter: none;
   }
 
-  @media only screen and (min-width: 1000px) {
-    justify-content: left;
-  }
-
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     justify-content: center;
   }
 `;
@@ -146,30 +135,32 @@ const NavListElement = styled.li`
   transition: background-color 300ms linear;
   overflow: hidden;
 
+  white-space: nowrap;
+
+  :first-child {
+    border-bottom: 6px var(--nord3) solid;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.02ch;
+    width: 100%;
+    /* border-bottom: revert; */
+  }
+
+  :first-child img {
+    margin: 0 1.25rem;
+    min-width: 2.5rem;
+    max-width: 2.5rem;
+  }
+
+  :last-child {
+    margin-top: auto;
+  }
+
   :hover {
     background-color: var(--nord4);
   }
 
-  @media only screen and (min-width: 1000px) {
-    white-space: nowrap;
-    :first-child {
-      font-size: 2rem;
-      text-align: center;
-      letter-spacing: 0.02ch;
-      width: 100%;
-      border-bottom: 6px var(--nord3) solid;
-    }
-    :first-child img {
-      margin: 0 1.25rem;
-      min-width: 2.5rem;
-      max-width: 2.5rem;
-    }
-    :last-child {
-      margin-top: auto;
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
+  @media (max-width: 1000px) {
     height: 100%;
     text-align: center;
     font-size: 0.8rem;
@@ -181,6 +172,22 @@ const NavListElement = styled.li`
     :hover span {
       display: inline;
       text-align: center;
+    }
+
+    white-space: nowrap;
+
+    :first-child {
+      border-bottom: revert;
+      font-size: revert;
+    }
+
+    :first-child img {
+      margin: revert;
+      min-width: revert;
+    }
+
+    :last-child {
+      margin-top: revert;
     }
   }
 `;

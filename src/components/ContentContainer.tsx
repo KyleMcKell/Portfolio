@@ -4,29 +4,6 @@ import { About } from 'components/About';
 import { Contact } from 'components/Contact';
 import { Projects } from 'components/Projects';
 
-const ContentContainerStyling = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  height: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-  background: var(--nord1);
-  margin: 0;
-  margin-bottom: 2rem;
-  padding: 3rem;
-  border: 4px solid var(--nord3);
-  border-radius: 20px;
-  filter: drop-shadow(0 4px 3px var(--nord0))
-    drop-shadow(0 2px 2px var(--nord0));
-
-  @media only screen and (max-width: 1000px) {
-    width: 80%;
-    padding: 0rem;
-    padding-bottom: 1rem;
-  }
-`;
-
 interface Props {
   content: string;
 }
@@ -45,7 +22,25 @@ export const ContentContainer: React.FC<Props> = (props: Props) => {
     }
   };
 
-  return <ContentContainerStyling>{shownContent()}</ContentContainerStyling>;
+  return <ContentWrapper>{shownContent()}</ContentWrapper>;
 };
+
+const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--nord1);
+  padding: 3rem;
+  border: 4px solid var(--nord3);
+  border-radius: 20px;
+  filter: drop-shadow(0 4px 3px var(--nord0))
+    drop-shadow(0 2px 2px var(--nord0));
+
+  @media (max-width: 1000px) {
+    width: 80%;
+    padding: 0rem;
+    padding-bottom: 1rem;
+  }
+`;
 
 export default ContentContainer;

@@ -7,16 +7,17 @@ interface Props {
 }
 
 const StyledMain = styled.main`
-  @media only screen and (min-width: 1000px) {
-    margin-left: calc(5rem + 6px);
-  }
-
+  margin-left: calc(5rem + 6px);
   height: 100%;
   color: var(--nord6);
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 1000px) {
+    margin-left: revert;
+  }
 `;
 
 export const Body = (props: Props) => {

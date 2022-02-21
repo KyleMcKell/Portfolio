@@ -41,48 +41,42 @@ const techIcons: TechIcon[] = [
 export const About = (props: Props) => {
   return (
     <>
+      <Separator />
       <AboutSelfDiv>
         <TextDiv>
-          <H2Text>Hey there 🤙</H2Text>
-          <H2Text>Nice to Meet You!</H2Text>
           <AboutMeText>
-            I’m a self-taught front end software developer ADHDing my way
-            through the world of web development. I have a passion for making my
-            ideas come to life in code.
+            <div>
+              I’m a self-taught front end software developer ADHDing my way
+              through the world of web development.
+            </div>
+            <br />
+            <div>
+              I have a passion for teaching others, you can follow along on my
+              Twitter!{' '}
+              <SocialLink href="https://twitter.com/KyleMcKell">
+                @KyleMcKell
+              </SocialLink>
+            </div>
           </AboutMeText>
         </TextDiv>
         <SelfieStyle src={selfie} alt="picture of me" />
       </AboutSelfDiv>
       <Separator />
-      <LogoContainer>
-        {techIcons.map((icon) => {
-          return (
-            <TechnologyLogo src={icon.src} alt={icon.name} key={icon.name} />
-          );
-        })}
-      </LogoContainer>
     </>
   );
 };
-
-const H2Text = styled.h2`
-  color: var(--nord6);
-  text-align: center;
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-`;
 
 const AboutSelfDiv = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 
-  @media only screen and (max-width: 1000px) {
-    flex-direction: column;
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 `;
 
@@ -105,12 +99,20 @@ const SelfieStyle = styled.img`
 `;
 
 const AboutMeText = styled.p`
-  max-width: 500px;
+  max-width: 450px;
   font-weight: 450;
   line-height: 1.7;
   font-size: 1.2rem;
-  text-align: center;
   padding: 0 2rem;
+`;
+
+const SocialLink = styled.a`
+  color: inherit;
+
+  :hover {
+    cursor: pointer;
+    color: var(--nord8);
+  }
 `;
 
 const Separator = styled.div`
@@ -118,24 +120,4 @@ const Separator = styled.div`
   height: 0.5rem;
   width: 70%;
   margin: 2rem;
-`;
-
-const LogoContainer = styled.div`
-  padding: 2rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-`;
-
-const TechnologyLogo = styled.img`
-  width: 80px;
-  height: 80px;
-  filter: grayscale(100%);
-  transition: filter ease-in-out 300ms;
-
-  :hover {
-    filter: grayscale(0%);
-  }
 `;
