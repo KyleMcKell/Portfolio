@@ -1,15 +1,12 @@
 import React from 'react';
-import LogoContainer from 'components/LogoContainer';
+import styled from 'styled-components';
+
 import css3 from 'images/tech-icons/css3.png';
 import html5 from 'images/tech-icons/html5.png';
 import js from 'images/tech-icons/javascript.png';
 import react from 'images/tech-icons/react.png';
 import ts from 'images/tech-icons/typescript.png';
-import TechnologyLogo from 'components/TechnologyLogo';
-import H2Text from 'components/H2Text';
-import Separator from 'components/Separator';
 import selfie from 'images/me.jpg';
-import styled from 'styled-components';
 
 interface Props {}
 
@@ -40,6 +37,40 @@ const techIcons: TechIcon[] = [
     name: 'react',
   },
 ];
+
+export const About = (props: Props) => {
+  return (
+    <>
+      <AboutSelfDiv>
+        <TextDiv>
+          <H2Text>Hey there 🤙</H2Text>
+          <H2Text>Nice to Meet You!</H2Text>
+          <AboutMeText>
+            I’m a self-taught front end software developer ADHDing my way
+            through the world of web development. I have a passion for making my
+            ideas come to life in code.
+          </AboutMeText>
+        </TextDiv>
+        <SelfieStyle src={selfie} alt="picture of me" />
+      </AboutSelfDiv>
+      <Separator />
+      <LogoContainer>
+        {techIcons.map((icon) => {
+          return (
+            <TechnologyLogo src={icon.src} alt={icon.name} key={icon.name} />
+          );
+        })}
+      </LogoContainer>
+    </>
+  );
+};
+
+const H2Text = styled.h2`
+  color: var(--nord6);
+  text-align: center;
+  margin: 1.5rem 3rem;
+  font-size: 1.5rem;
+`;
 
 const AboutSelfDiv = styled.div`
   display: flex;
@@ -82,29 +113,29 @@ const AboutMeText = styled.p`
   padding: 0 2rem;
 `;
 
-export const About = (props: Props) => {
-  return (
-    <>
-      <AboutSelfDiv>
-        <TextDiv>
-          <H2Text>Hey there 🤙</H2Text>
-          <H2Text>Nice to Meet You!</H2Text>
-          <AboutMeText>
-            I’m a self-taught front end software developer ADHDing my way
-            through the world of web development. I have a passion for making my
-            ideas come to life in code.
-          </AboutMeText>
-        </TextDiv>
-        <SelfieStyle src={selfie} alt="picture of me" />
-      </AboutSelfDiv>
-      <Separator />
-      <LogoContainer>
-        {techIcons.map((icon) => {
-          return (
-            <TechnologyLogo src={icon.src} alt={icon.name} key={icon.name} />
-          );
-        })}
-      </LogoContainer>
-    </>
-  );
-};
+const Separator = styled.div`
+  background-color: var(--nord5);
+  height: 0.5rem;
+  width: 70%;
+  margin: 2rem;
+`;
+
+const LogoContainer = styled.div`
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+`;
+
+const TechnologyLogo = styled.img`
+  width: 80px;
+  height: 80px;
+  filter: grayscale(100%);
+  transition: filter ease-in-out 300ms;
+
+  :hover {
+    filter: grayscale(0%);
+  }
+`;

@@ -3,7 +3,18 @@ import styled from 'styled-components';
 
 interface Props {}
 
-const StyledHeader = styled.header`
+export const Header = (props: Props) => {
+  return (
+    <HeaderContainer>
+      <NameContainer>
+        <H1Name>Kyle McKell</H1Name>
+      </NameContainer>
+      <HeaderSeparator />
+    </HeaderContainer>
+  );
+};
+
+const HeaderContainer = styled.header`
   height: 200px;
   width: auto;
   display: flex;
@@ -47,14 +58,3 @@ const HeaderSeparator = styled.div`
     width: 80%;
   }
 `;
-
-export const Header = (props: Props) => {
-  return (
-    <StyledHeader>
-      <NameContainer>
-        <H1Name>Kyle McKell</H1Name>
-      </NameContainer>
-      <HeaderSeparator />
-    </StyledHeader>
-  );
-};
