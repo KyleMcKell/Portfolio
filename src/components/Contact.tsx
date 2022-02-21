@@ -26,8 +26,8 @@ export const Contact = (props: Props) => {
   };
 
   return (
-    <StyledForm action="submit" onSubmit={sendEmail}>
-      <H2Text>Contact Me!</H2Text>
+    <Wrapper action="submit" onSubmit={sendEmail}>
+      <Heading>Contact Me!</Heading>
       <div>
         <ContactInfoDiv>
           <LabelInputDiv>
@@ -53,24 +53,23 @@ export const Contact = (props: Props) => {
           Send
         </SubmitButton>
       </div>
-    </StyledForm>
+    </Wrapper>
   );
 };
 
-const StyledForm = styled.form`
+const Wrapper = styled.form`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
+  width: 100%;
 `;
 
-const H2Text = styled.h2`
+const Heading = styled.h2`
   color: var(--nord6);
   text-align: center;
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 `;
 
 const ContactInfoDiv = styled.div`

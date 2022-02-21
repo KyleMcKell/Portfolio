@@ -1,20 +1,28 @@
-import React from 'react';
 import styled from 'styled-components';
-import ContentContainer from 'components/ContentContainer';
+import { About } from 'components/About';
+import { Projects } from 'components/Projects';
+import { Contact } from './Contact';
 
-interface Props {
-  content: string;
-}
+export const Body = () => {
+  return (
+    <Main>
+      <About />
+      <Projects />
+      <Contact />
+    </Main>
+  );
+};
 
-const StyledMain = styled.main`
+const Main = styled.main`
   color: var(--nord6);
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
   margin: 1rem;
-  margin-left: calc(5rem + 6px + 1rem);
+  gap: 8rem;
 
   @media (max-width: 1000px) {
     margin-left: revert;
@@ -22,13 +30,3 @@ const StyledMain = styled.main`
     align-items: center;
   }
 `;
-
-export const Body = (props: Props) => {
-  return (
-    <>
-      <StyledMain>
-        <ContentContainer content={props.content} />
-      </StyledMain>
-    </>
-  );
-};

@@ -5,58 +5,24 @@ interface Props {}
 
 export const Header = (props: Props) => {
   return (
-    <StyledHeader>
-      <NameContainer>
-        <H1Name>Kyle McKell</H1Name>
-      </NameContainer>
-      <HeaderSeparator />
-    </StyledHeader>
+    <Wrapper>
+      <Name>Kyle McKell</Name>
+    </Wrapper>
   );
 };
 
-const StyledHeader = styled.header`
-  height: 200px;
-  width: auto;
+const Wrapper = styled.header`
+  padding: 2rem;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: calc(5rem + 6px);
-
-  @media (max-width: 1000px) {
-    margin-left: revert;
-  }
+  border-bottom: 8px solid var(--nord9);
 `;
 
-const NameContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`;
-
-const H1Name = styled.h1`
+const Name = styled.h1`
   font-size: 4rem;
   font-weight: bold;
   color: var(--nord4);
-  margin-bottom: 5px;
-  margin-top: 0px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 6px solid transparent;
-
-  @media (max-width: 1000px) {
-    font-size: 3rem;
-  }
-`;
-
-const HeaderSeparator = styled.div`
-  background-color: var(--nord9);
-  height: 0.5rem;
-  width: 30rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-
-  @media (max-width: 1000px) {
-    width: 80%;
-  }
 `;

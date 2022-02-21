@@ -37,19 +37,30 @@ const projects: Project[] = [
 
 export const Projects = (props: Props) => {
   return (
-    <>
-      <H2Text>My Projects</H2Text>
-      <ProjectContainer>
+    <Wrapper>
+      <Heading>My Projects</Heading>
+      <ProjectsWrapper>
         {projects.map((project) => {
           return <ProjectBox project={project} key={project.name} />;
         })}
-      </ProjectContainer>
-    </>
+      </ProjectsWrapper>
+    </Wrapper>
   );
 };
 
-const ProjectContainer = styled.div`
-  padding: 1rem;
+const Wrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`;
+
+const Heading = styled.h2`
+  color: var(--nord6);
+  text-align: center;
+  font-size: 2rem;
+`;
+
+const ProjectsWrapper = styled.div`
   width: fit-content;
   height: 100%;
   display: flex;
@@ -58,12 +69,4 @@ const ProjectContainer = styled.div`
   justify-content: space-around;
   gap: clamp(8px, 8px + 10vw, 32px);
   flex-wrap: wrap;
-`;
-
-const H2Text = styled.h2`
-  color: var(--nord6);
-  text-align: center;
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-  padding-top: 1rem;
 `;

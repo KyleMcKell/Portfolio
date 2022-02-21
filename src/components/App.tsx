@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Navbar } from 'components/Navbar';
+import React from 'react';
 import { Body } from 'components/Body';
 import { Header } from 'components/Header';
 import { createGlobalStyle } from 'styled-components';
@@ -39,39 +38,18 @@ const GlobalStyle = createGlobalStyle`
 body {
 	padding: 0;
 	margin: 0;
-	background-size: 400% 400%;
-	
-	/* background-image: linear-gradient(
-		-45deg,
-		var(--nord3),
-		var(--nord1)
-	);
-	animation: gradient 30s ease infinite */
 	background: var(--nord0);
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0%
-	}
-	50% {
-		background-position: 100%
-	}
-	100% {
-		background-position: 0%
-	}
+	display: flex;
+	justify-content: center;
 }
 `;
 
 const App: React.FC = () => {
-  const [content, setContent] = useState('about');
-
   return (
     <>
       <GlobalStyle />
-      <Navbar setContent={setContent} />
       <Header />
-      <Body content={content} />
+      <Body />
     </>
   );
 };
