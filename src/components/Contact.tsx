@@ -30,22 +30,22 @@ export const Contact = (props: Props) => {
       <Heading>Contact Me!</Heading>
       <NameField>
         <label htmlFor="name">Name</label>
-        <OneLineInput type="text" name="name" required />
+        <OneLineInput type="text" name="name" id="name" required />
       </NameField>
 
       <EmailField>
         <label htmlFor="email">Email</label>
-        <OneLineInput type="email" name="email" required />
+        <OneLineInput type="email" name="email" id="email" required />
       </EmailField>
 
       <SubjectField>
-        <label htmlFor="message">Subject</label>
-        <OneLineInput name="subject" type="text" required />
+        <label htmlFor="subject">Subject</label>
+        <OneLineInput name="subject" type="text" id="subject" required />
       </SubjectField>
 
       <Message>
         <label htmlFor="message">Message</label>
-        <MessageArea name="message" required />
+        <MessageArea name="message" id="message" required />
       </Message>
 
       <SubmitButton type="submit" disabled={buttonDisabled}>
@@ -90,7 +90,7 @@ const Heading = styled.h2`
   }
 `;
 
-const Field = styled.div`
+const Field = styled.section`
   display: grid;
   max-height: 6rem;
 `;
@@ -128,8 +128,8 @@ const OneLineInput = styled.input`
 
 const MessageArea = styled.textarea`
   display: grid;
-  padding: 1rem 0.5rem;
-  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
   line-height: 1.5;
   width: 100%;
   min-height: calc(100% - 1.5rem);

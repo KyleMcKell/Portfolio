@@ -7,7 +7,6 @@ export const Footer = (props: Props) => {
   return (
     <Wrapper>
       <Contact />
-      {/* <Socials>hi</Socials> */}
     </Wrapper>
   );
 };
@@ -18,7 +17,3 @@ const Wrapper = styled.footer`
   display: flex;
   justify-content: center;
 `;
-
-// const Socials = styled.section`
-//   flex: 1;
-// `;

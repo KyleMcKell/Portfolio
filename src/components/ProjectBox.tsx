@@ -7,19 +7,15 @@ interface Props {
 }
 
 export const ProjectBox: React.FC<Props> = ({ project }) => {
-  const handleClick = (url: string) => {
-    return window.open(`${url}`, '_self');
-  };
-
   return (
-    <ProjectContainer onClick={() => handleClick(project.url)}>
+    <ProjectContainer href={project.url}>
       <ProjectImg src={project.img} alt={project.name} />
       <ProjectName>{project.name}</ProjectName>
     </ProjectContainer>
   );
 };
 
-const ProjectContainer = styled.button`
+const ProjectContainer = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,9 +24,6 @@ const ProjectContainer = styled.button`
   height: 100%;
   width: 100%;
   max-width: 22rem;
-
-  background: none;
-  border: none;
 
   :hover {
     cursor: pointer;

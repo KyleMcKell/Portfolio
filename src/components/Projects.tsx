@@ -65,7 +65,7 @@ const Heading = styled.h2`
   }
 `;
 
-const ProjectsWrapper = styled.div`
+const ProjectsWrapper = styled.section`
   width: fit-content;
   height: 100%;
   display: flex;
