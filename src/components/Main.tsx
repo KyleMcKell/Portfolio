@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import { About } from 'components/About';
 import { Projects } from 'components/Projects';
 
-export const Body = () => {
+export const Main = () => {
   return (
-    <Main>
+    <Wrapper>
       <About />
       <Projects />
-    </Main>
+    </Wrapper>
   );
 };
 
-const Main = styled.main`
+const Wrapper = styled.main`
   font-weight: bold;
   display: flex;
   flex-direction: column;
