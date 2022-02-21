@@ -56,15 +56,16 @@ export const Contact = (props: Props) => {
 };
 
 const Wrapper = styled.form`
+  max-width: 800px;
   flex: 1;
   display: grid;
   gap: 2rem;
-  grid-template-columns: 1fr minmax(500px, 3fr);
+  grid-template-columns: 1fr minmax(500px, 3fr) 1fr;
   grid-template-areas:
-    'heading heading'
-    'name message'
-    'email message'
-    'subject button';
+    'heading heading heading'
+    'name message message'
+    'email message message'
+    'subject subject button';
 
   @media (max-width: 1000px) {
     grid-template-columns: 1fr;
@@ -109,7 +110,7 @@ const Message = styled.div`
 `;
 
 const OneLineInput = styled.input`
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   font-size: 1.2rem;
   line-height: 1.5;
   border: none;
@@ -146,12 +147,15 @@ const MessageArea = styled.textarea`
 
 const SubmitButton = styled.button`
   place-self: end;
+  display: grid;
+  place-content: center;
+  max-height: 45px;
   border: none;
   padding: 1rem 3rem;
   border-radius: 4px;
   font-family: inherit;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--nord4);
   background-color: var(--nord3point5);
   transition: background-color 0.5s ease;

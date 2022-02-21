@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Contact } from './Contact';
 
@@ -17,6 +16,7 @@ const Wrapper = styled.footer`
   background-color: var(--nord1);
   padding: 4rem 3rem;
   display: flex;
+  justify-content: center;
 `;
 
 // const Socials = styled.section`

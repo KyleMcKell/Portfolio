@@ -11,8 +11,9 @@ export const About = (props: Props) => {
       <TextDiv>
         <AboutMeText>
           <span>
-            Hello! I’m a self-taught front-end developer ADHDing my way through
-            the world of web development.
+            Hello! I’m a self-taught front-end developer
+            <SnazzyText> ADHD-</SnazzyText>ing my way through the world of web
+            development.
           </span>
           <span>
             I have a passion for teaching others, and if you're interested, you
@@ -29,9 +30,9 @@ export const About = (props: Props) => {
             <Link href="https://kit.svelte.dev/">SvelteKit</Link>.
           </span>
           <span>
-            I also LOVE writing <SnazzyText> NIFTY </SnazzyText>CSS.
+            I also LOVE writing <SnazzyTextPink> NIFTY </SnazzyTextPink>CSS.
           </span>
-          <span>Let's chat sometime 🦆</span>
+          <span>☕ Let's chat sometime 💙</span>
         </AboutMeText>
       </TextDiv>
       <SelfieStyle src={selfie} alt="picture of me" />
@@ -91,6 +92,10 @@ const Link = styled.a`
 `;
 
 const SnazzyText = styled.span`
+  font-family: var(--font-snazzy);
+`;
+
+const SnazzyTextPink = styled(SnazzyText)`
   font-family: var(--font-snazzy);
   color: var(--nord15);
 `;
