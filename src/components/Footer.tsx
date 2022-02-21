@@ -19,6 +19,6 @@ const Wrapper = styled.footer`
   display: flex;
 `;
 
-const Socials = styled.section`
-  flex: 1;
-`;
+// const Socials = styled.section`
+//   flex: 1;
+// `;
